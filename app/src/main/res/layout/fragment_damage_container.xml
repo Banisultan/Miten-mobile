@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FinalActivity.AddSurveyinFragment.DamageContainerFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorwhite">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:paddingTop="10dp"
+            android:layout_above="@id/layoutbottom"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_shape_v7">
+
+                <LinearLayout
+                    android:id="@+id/tomboladd"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:gravity="center"
+                    android:background="?attr/selectableItemBackground"
+                    android:padding="15dp">
+
+                    <ImageView
+                        android:id="@+id/imageadd"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:padding="5dp"
+                        android:background="@drawable/bg_button_on"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:fontFamily="@font/neuron_regular"
+                        android:textSize="@dimen/normal_text"
+                        android:textColor="@color/colorblack_v2"
+                        android:text="Tambahkan Data Kerusakan"/>
+
+                </LinearLayout>
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="10dp">
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/view"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"/>
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layoutbottom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding ="10dp"
+            android:background="@drawable/bg_layout_bottom"
+            android:layout_alignParentBottom="true">
+
+            <LinearLayout
+                android:id="@+id/tombolkembali"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/bg_button_off">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="?attr/selectableItemBackground"
+                    android:text="@string/surveyin_buttonback"
+                    android:fontFamily="@font/neuron_regular"
+                    android:textStyle="bold"
+                    android:padding="10dp"
+                    android:gravity="center"
+                    android:textSize="@dimen/normal_button"
+                    android:textColor="@color/colororange"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/tombollanjut"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/bg_button_on">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="?attr/selectableItemBackground"
+                    android:text="@string/surveyin_buttonnext"
+                    android:fontFamily="@font/neuron_regular"
+                    android:textStyle="bold"
+                    android:padding="10dp"
+                    android:gravity="center"
+                    android:textSize="@dimen/normal_button"
+                    android:textColor="@color/colorwhite"/>
+            </LinearLayout>
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</FrameLayout>

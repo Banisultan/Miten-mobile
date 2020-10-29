@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="10dp">
+
+    <LinearLayout
+        android:id="@+id/tombolview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="10dp"
+        android:background="@drawable/bg_spinner">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Component Code"
+                    android:textSize="17dp"
+                    android:textStyle="bold"
+                    android:layout_marginTop="10dp"
+                    android:fontFamily="@font/neuron_regular"/>
+
+                <TextView
+                    android:id="@+id/textcount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="1"
+                    android:textSize="17dp"
+                    android:textStyle="bold"
+                    android:background="@drawable/bg_shape_v2"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    android:layout_alignParentRight="true"
+                    android:fontFamily="@font/neuron_regular"/>
+            </RelativeLayout>
+
+
+            <TextView
+                android:id="@+id/textcomponent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="122"
+                android:textSize="15dp"
+                android:layout_marginTop="5dp"
+                android:fontFamily="@font/neuron_regular"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Location"
+                android:textSize="17dp"
+                android:textStyle="bold"
+                android:fontFamily="@font/neuron_regular"/>
+
+            <TextView
+                android:id="@+id/textlocation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="122"
+                android:textSize="15dp"
+                android:layout_marginTop="5dp"
+                android:fontFamily="@font/neuron_regular"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Quantity"
+                android:textSize="17dp"
+                android:textStyle="bold"
+                android:fontFamily="@font/neuron_regular"/>
+
+            <TextView
+                android:id="@+id/textquantity"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="122"
+                android:textSize="15dp"
+                android:layout_marginTop="5dp"
+                android:fontFamily="@font/neuron_regular"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Damage"
+                android:textSize="17dp"
+                android:textStyle="bold"
+                android:fontFamily="@font/neuron_regular"/>
+
+            <TextView
+                android:id="@+id/textdamage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="122"
+                android:textSize="15dp"
+                android:layout_marginTop="5dp"
+                android:fontFamily="@font/neuron_regular"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="TPC"
+                android:textSize="17dp"
+                android:textStyle="bold"
+                android:fontFamily="@font/neuron_regular"/>
+
+            <TextView
+                android:id="@+id/texttpc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="122"
+                android:textSize="15dp"
+                android:layout_marginTop="5dp"
+                android:fontFamily="@font/neuron_regular"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Repair"
+                android:textSize="17dp"
+                android:textStyle="bold"
+                android:fontFamily="@font/neuron_regular"/>
+
+            <TextView
+                android:id="@+id/textrepair"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="122"
+                android:textSize="15dp"
+                android:layout_marginTop="5dp"
+                android:fontFamily="@font/neuron_regular"/>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/textnama"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Foto Depan"
+            android:textSize="17dp"
+            android:textStyle="bold"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/neuron_regular"/>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/viewfoto"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Foto Perbaikan"
+            android:textSize="17dp"
+            android:textStyle="bold"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/neuron_regular"/>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/viewfotorepair"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,318 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="20dp">
+
+    <LinearLayout
+        android:id="@+id/tombolview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_shape_v7"
+        android:padding="10dp"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorgrey"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_toLeftOf="@id/textposisi"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textcount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="1"
+                    android:textSize="14dp"
+                    android:textStyle="bold"
+                    android:background="@drawable/bg_shape_v2"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    android:layout_alignParentRight="true"
+                    android:textColor="@color/colorblack_v2"
+                    android:fontFamily="@font/neuron_regular"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Damage"
+                    android:textSize="14dp"
+                    android:textStyle="bold"
+                    android:layout_marginLeft="10dp"
+                    android:textColor="@color/colorblack_v2"
+                    android:fontFamily="@font/neuron_regular"/>
+
+                <TextView
+                    android:id="@+id/textdamage"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="123123"
+                    android:textSize="14dp"
+                    android:textStyle="bold"
+                    android:layout_marginLeft="5dp"
+                    android:textColor="@color/colorblack_v2"
+                    android:fontFamily="@font/neuron_regular"/>
+            </LinearLayout>
+
+            <TextView
+                android:visibility="gone"
+                android:id="@+id/textposisi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Depan"
+                android:textSize="14dp"
+                android:textStyle="bold"
+                android:background="@drawable/bg_shape_v2"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:layout_alignParentRight="true"
+                android:fontFamily="@font/neuron_regular"/>
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/bg_spinner"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Component"
+                android:textSize="@dimen/normal_judul_text"
+                android:textStyle="bold"
+                android:textColor="@color/colorblack_v2"
+                android:fontFamily="@font/neuron_regular"/>
+
+            <TextView
+                android:id="@+id/textcomponent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="122"
+                android:textSize="@dimen/normal_text"
+                android:textColor="@color/colorblack_v2"
+                android:fontFamily="@font/neuron_regular"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:background="@drawable/bg_spinner"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Location"
+                android:textSize="@dimen/normal_judul_text"
+                android:textStyle="bold"
+                android:textColor="@color/colorblack_v2"
+                android:fontFamily="@font/neuron_regular"/>
+
+            <TextView
+                android:id="@+id/textlocation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="122"
+                android:textSize="@dimen/normal_text"
+                android:textColor="@color/colorblack_v2"
+                android:fontFamily="@font/neuron_regular"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:background="@drawable/bg_spinner"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Quantity"
+                android:textSize="@dimen/normal_judul_text"
+                android:textStyle="bold"
+                android:textColor="@color/colorblack_v2"
+                android:fontFamily="@font/neuron_regular"/>
+
+            <TextView
+                android:id="@+id/textquantity"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="122"
+                android:textSize="@dimen/normal_text"
+                android:textColor="@color/colorblack_v2"
+                android:fontFamily="@font/neuron_regular"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:background="@drawable/bg_spinner"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Dimensi"
+                android:textSize="@dimen/normal_judul_text"
+                android:textStyle="bold"
+                android:textColor="@color/colorblack_v2"
+                android:fontFamily="@font/neuron_regular"/>
+
+            <TextView
+                android:id="@+id/textdimensi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="122"
+                android:textSize="@dimen/normal_text"
+                android:textColor="@color/colorblack_v2"
+                android:fontFamily="@font/neuron_regular"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:background="@drawable/bg_spinner"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="TPC"
+                android:textSize="@dimen/normal_judul_text"
+                android:textStyle="bold"
+                android:textColor="@color/colorblack_v2"
+                android:fontFamily="@font/neuron_regular"/>
+
+            <TextView
+                android:id="@+id/texttpc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="122"
+                android:textSize="@dimen/normal_text"
+                android:textColor="@color/colorblack_v2"
+                android:fontFamily="@font/neuron_regular"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:background="@drawable/bg_spinner"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Repair"
+                android:textSize="@dimen/normal_judul_text"
+                android:textStyle="bold"
+                android:textColor="@color/colorblack_v2"
+                android:fontFamily="@font/neuron_regular"/>
+
+            <TextView
+                android:id="@+id/textrepair"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="122"
+                android:textSize="@dimen/normal_text"
+                android:textColor="@color/colorblack_v2"
+                android:fontFamily="@font/neuron_regular"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layoutfoto"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:background="@drawable/bg_spinner"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Foto Kerusakan"
+                android:textSize="@dimen/normal_judul_text"
+                android:textStyle="bold"
+                android:textColor="@color/colorblack_v2"
+                android:fontFamily="@font/neuron_regular"/>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/viewfoto"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:nestedScrollingEnabled="false"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layoutperbaikan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:padding="10dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Photo Perbaikan"
+                android:textSize="@dimen/normal_judul_text"
+                android:textColor="@color/colorblack_v2"
+                android:textStyle="bold"
+                android:fontFamily="@font/neuron_regular"/>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/viewfotorepair"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+
+
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FinalActivity.SurveyinFragment.WaitingFragment">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/viewwaiting"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+
+            <LinearLayout
+                android:id="@+id/layoutbottom"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_alignParentBottom="true">
+
+                <ProgressBar
+                    android:id="@+id/progressbar"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="20dp"
+                    android:progress="5"
+                    android:indeterminate="true"
+                    android:indeterminateTint="@color/colorbg"
+                    android:layout_gravity="center"
+                    android:layout_centerHorizontal="true"
+                    android:layout_below="@id/viewwaiting"/>
+
+                <TextView
+                    android:id="@+id/textdone"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="- Selesai -"
+                    android:visibility="gone"
+                    android:fontFamily="@font/neuron_regular"
+                    android:textSize="@dimen/normal_text"
+                    android:layout_below="@id/progressbar"
+                    android:gravity="center"/>
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/textempty"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Tidak ada data"
+                android:visibility="gone"
+                android:fontFamily="@font/neuron_regular"
+                android:gravity="center"/>
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+</FrameLayout>

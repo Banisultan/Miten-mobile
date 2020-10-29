@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Drop Shadow Stack -->
+    <item>
+        <shape>
+            <padding android:top="0dp" android:right="0dp" android:bottom="1dp" android:left="0dp" />
+            <solid android:color="#02C0C0C0" />
+        </shape>
+    </item>
+    <item>
+        <shape>
+            <padding android:top="0dp" android:right="0dp" android:bottom="1dp" android:left="0dp" />
+            <solid android:color="#05C0C0C0" />
+        </shape>
+    </item>
+    <item>
+        <shape>
+            <padding android:top="0dp" android:right="0dp" android:bottom="1dp" android:left="0dp" />
+            <solid android:color="#10C0C0C0" />
+        </shape>
+    </item>
+    <item>
+        <shape>
+            <padding android:top="0dp" android:right="0dp" android:bottom="1dp" android:left="0dp" />
+            <solid android:color="#15C0C0C0" />
+        </shape>
+    </item>
+    <item>
+        <shape>
+            <padding android:top="0dp" android:right="0dp" android:bottom="1dp" android:left="0dp" />
+            <solid android:color="#20C0C0C0" />
+        </shape>
+    </item>
+    <item>
+        <shape>
+            <padding android:top="0dp" android:right="0dp" android:bottom="1dp" android:left="0dp" />
+            <solid android:color="#25C0C0C0" />
+        </shape>
+    </item>
+    <item>
+        <shape>
+            <padding android:top="0dp" android:right="0dp" android:bottom="0dp" android:left="0dp" />
+            <solid android:color="#30C0C0C0" />
+        </shape>
+    </item>
+
+    <!-- Background -->
+    <item>
+        <shape>
+            <solid android:color="#ffffff" />
+        </shape>
+    </item>
+</layer-list>

@@ -1,0 +1,3 @@
+rootProject.name='Convey'
+include ':app'
+include ':openCVLibrary343'

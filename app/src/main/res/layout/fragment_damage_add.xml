@@ -1,0 +1,335 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FinalActivity.AddSurveyinFragment.DamageAddFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorwhite">
+
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@id/layoutbottom">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="20dp"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Lengkapi Data Kerusakan"
+                        android:gravity="center"
+                        android:fontFamily="@font/neuron_regular"
+                        android:textSize="@dimen/normal_judul_input"
+                        android:textStyle="normal"
+                        android:textColor="@color/colorblack_v2"/>
+
+                    <LinearLayout
+                        android:id="@+id/tombolcomponent"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/bg_shape_v7"
+                        android:orientation="vertical"
+                        android:layout_marginTop="10dp"
+                        android:paddingLeft="15dp"
+                        android:paddingRight="15dp"
+                        android:paddingTop="15dp"
+                        android:paddingBottom="15dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:fontFamily="@font/neuron_regular"
+                            android:textSize="@dimen/normal_text"
+                            android:textColor="@color/colorblack_v2"
+                            android:text="Component Code"/>
+
+                        <TextView
+                            android:id="@+id/textcomponent"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@null"
+                            android:fontFamily="@font/neuron_regular"
+                            android:hint="- Pilih Component Code"
+                            android:textColor="@color/colorblack_v2"
+                            android:textSize="@dimen/normal_input"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/bg_shape_v7"
+                        android:orientation="vertical"
+                        android:padding="15dp"
+                        android:layout_marginTop="10dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:fontFamily="@font/neuron_regular"
+                            android:textSize="@dimen/normal_text"
+                            android:textColor="@color/colorblack_v2"
+                            android:text="Location"/>
+
+                        <EditText
+                            android:id="@+id/inputlocation"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@null"
+                            android:fontFamily="@font/neuron_regular"
+                            android:hint="contoh : xxx"
+                            android:inputType="textVisiblePassword|textNoSuggestions"
+                            android:textColor="@color/colorblack_v2"
+                            android:textSize="@dimen/normal_input" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/tomboldimensi"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/bg_shape_v7"
+                        android:orientation="vertical"
+                        android:padding="15dp"
+                        android:layout_marginTop="10dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:fontFamily="@font/neuron_regular"
+                            android:textSize="@dimen/normal_text"
+                            android:textColor="@color/colorblack_v2"
+                            android:text="Dimensi"/>
+
+                        <TextView
+                            android:id="@+id/textdimensi"
+                            android:textSize="@dimen/normal_input"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@null"
+                            android:fontFamily="@font/neuron_regular"
+                            android:hint="- Pilih Dimensi"
+                            android:textColor="@color/colorblack_v2"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/bg_shape_v7"
+                        android:orientation="vertical"
+                        android:padding="15dp"
+                        android:layout_marginTop="10dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:fontFamily="@font/neuron_regular"
+                            android:textSize="@dimen/normal_text"
+                            android:textColor="@color/colorblack_v2"
+                            android:text="Quantity"/>
+
+                        <EditText
+                            android:id="@+id/inputquantity"
+                            android:textSize="@dimen/normal_input"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@null"
+                            android:fontFamily="@font/neuron_regular"
+                            android:hint="contoh : 00"
+                            android:inputType="number"
+                            android:maxLines="1"
+                            android:maxLength="10"
+                            android:textColor="@color/colorblack_v2"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/tomboldamage"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/bg_shape_v7"
+                        android:orientation="vertical"
+                        android:padding="15dp"
+                        android:layout_marginTop="10dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:fontFamily="@font/neuron_regular"
+                            android:textSize="@dimen/normal_text"
+                            android:textColor="@color/colorblack_v2"
+                            android:text="Damage Code"/>
+
+                        <TextView
+                            android:id="@+id/textdamage"
+                            android:textSize="@dimen/normal_input"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@null"
+                            android:fontFamily="@font/neuron_regular"
+                            android:hint="- Pilih Damage Code"
+                            android:textColor="@color/colorblack_v2"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/bg_shape_v7"
+                        android:orientation="vertical"
+                        android:padding="15dp"
+                        android:layout_marginTop="10dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:fontFamily="@font/neuron_regular"
+                            android:textSize="@dimen/normal_text"
+                            android:textColor="@color/colorblack_v2"
+                            android:text="Tpc"/>
+
+                        <Spinner
+                            android:id="@+id/spintpc"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/neuron_regular"
+                            android:textColor="@color/colorblack_v2"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/tombolrepair"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/bg_shape_v7"
+                        android:orientation="vertical"
+                        android:padding="15dp"
+                        android:layout_marginTop="10dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/neuron_regular"
+                            android:textSize="@dimen/normal_text"
+                            android:textColor="@color/colorblack_v2"
+                            android:text="Repair Code" />
+
+                        <TextView
+                            android:id="@+id/textrepair"
+                            android:textSize="@dimen/normal_input"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@null"
+                            android:fontFamily="@font/neuron_regular"
+                            android:hint="- Pilih Repair Code"
+                            android:textColor="@color/colorblack_v2"/>
+                    </LinearLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/tombolphoto"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/bg_shape_v7"
+                        android:orientation="vertical"
+                        android:padding="15dp"
+                        android:layout_marginTop="10dp">
+
+                        <ImageView
+                            android:id="@+id/imageadd"
+                            android:layout_width="25dp"
+                            android:layout_height="25dp"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:padding="5dp"
+                            android:background="@drawable/bg_button_on"/>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/neuron_regular"
+                            android:layout_centerVertical="true"
+                            android:textColor="@color/colorblack_v2"
+                            android:textSize="@dimen/normal_text"
+                            android:text="Tambahkan Foto"
+                            android:layout_toLeftOf="@id/imageadd"/>
+                    </RelativeLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="15dp">
+
+                        <androidx.recyclerview.widget.RecyclerView
+                            android:id="@+id/viewphoto"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"/>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </androidx.core.widget.NestedScrollView>
+
+        <LinearLayout
+            android:id="@+id/layoutbottom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_alignParentBottom="true">
+
+            <LinearLayout
+                android:id="@+id/tombolkembali"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:background="@drawable/bg_button_off"
+                android:layout_weight="1"
+                android:layout_marginRight="5dp"
+                android:gravity="center">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Kembali"
+                    android:textSize="@dimen/normal_button"
+                    android:fontFamily="@font/neuron_regular"
+                    android:textStyle="bold"
+                    android:textColor="@color/colororange"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/tombolsimpan"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:layout_marginLeft="5dp"
+                android:background="@drawable/bg_button_on">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Simpan"
+                    android:fontFamily="@font/neuron_regular"
+                    android:textSize="@dimen/normal_button"
+                    android:textStyle="bold"
+                    android:textColor="@color/colorwhite"/>
+            </LinearLayout>
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</FrameLayout>

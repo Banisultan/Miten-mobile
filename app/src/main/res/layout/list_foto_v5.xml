@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginRight="10dp">
+
+
+    <RelativeLayout
+        android:layout_width="150dp"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/imgview"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:background="@drawable/bg_image_v2"
+            android:scaleType="centerCrop"
+            android:adjustViewBounds="true"
+            android:padding="10dp"/>
+
+        <LinearLayout
+            android:id="@+id/tombolhapus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="5dp"
+            android:padding="7dp"
+            android:background="@drawable/bg_button_oval_grey_v2">
+
+            <ImageView
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:background="@drawable/vec_remove3"/>
+        </LinearLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

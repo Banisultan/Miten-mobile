@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:background="@color/colorwhite">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/step1"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:gravity="center"
+                android:text="1"
+                android:textStyle="bold"
+                android:textSize="18dp"
+                android:fontFamily="@font/neuron_regular"
+                android:background="@drawable/bg_step_on"
+                android:textColor="@color/colorwhite"/>
+
+            <View
+                android:id="@+id/linestep1"
+                android:layout_width="30dp"
+                android:layout_height="3dp"
+                android:text=""
+                android:layout_gravity="center"
+                android:background="@drawable/bg_line_on"
+                android:textColor="@color/colorwhite"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/step2"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:gravity="center"
+                android:text="2"
+                android:textStyle="bold"
+                android:textSize="18dp"
+                android:fontFamily="@font/neuron_regular"
+                android:background="@drawable/bg_step_off"
+                android:textColor="@color/colorwhite"/>
+
+            <View
+                android:id="@+id/linestep2"
+                android:layout_width="30dp"
+                android:layout_height="3dp"
+                android:text=""
+                android:layout_gravity="center"
+                android:background="@drawable/bg_line_off"
+                android:textColor="@color/colorwhite"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/step3"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:gravity="center"
+                android:text="3"
+                android:textStyle="bold"
+                android:textSize="18dp"
+                android:fontFamily="@font/neuron_regular"
+                android:background="@drawable/bg_step_off"
+                android:textColor="@color/colorwhite"/>
+
+            <View
+                android:id="@+id/linestep3"
+                android:layout_width="30dp"
+                android:layout_height="3dp"
+                android:text=""
+                android:layout_gravity="center"
+                android:background="@drawable/bg_line_off"
+                android:textColor="@color/colorwhite"/>
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="70dp"
+            android:layout_height="30dp">
+
+            <TextView
+                android:id="@+id/step4"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:gravity="center"
+                android:text="4"
+                android:textStyle="bold"
+                android:textSize="18dp"
+                android:fontFamily="@font/neuron_regular"
+                android:background="@drawable/bg_step_off"
+                android:textColor="@color/colorwhite"/>
+
+            <View
+                android:id="@+id/linestep4"
+                android:layout_width="40dp"
+                android:layout_height="3dp"
+                android:text=""
+                android:layout_gravity="center"
+                android:background="@drawable/bg_line_off"
+                android:layout_toRightOf="@id/step4"
+                android:layout_centerVertical="true"
+                android:textColor="@color/colorwhite"/>
+
+            <ImageView
+                android:id="@+id/step2v2"
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="12.5dp"
+                android:layout_marginTop="6dp"/>
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/step5"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:gravity="center"
+                android:text="5"
+                android:textStyle="bold"
+                android:textSize="18dp"
+                android:fontFamily="@font/neuron_regular"
+                android:background="@drawable/bg_step_off"
+                android:textColor="@color/colorwhite"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+</RelativeLayout>

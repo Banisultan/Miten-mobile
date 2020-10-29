@@ -1,0 +1,513 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".FragmentSurvey.SurveyinFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorwhite">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@id/layoutbottom">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="20dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/bg_shape_kategori"
+                        android:orientation="vertical"
+                        android:paddingLeft="15dp"
+                        android:paddingRight="15dp"
+                        android:paddingTop="15dp"
+                        android:paddingBottom="15dp"
+                        android:layout_weight="1">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:fontFamily="@font/neuron_regular"
+                            android:text="Container No"
+                            android:textSize="13dp"/>
+
+                        <EditText
+                            android:id="@+id/inputcontainernumber"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@null"
+                            android:fontFamily="@font/neuron_regular"
+                            android:hint="contoh : UUUUXXXXXX"
+                            android:layout_marginTop="5dp"
+                            android:inputType="textVisiblePassword|textNoSuggestions"
+                            android:textColor="@color/colorblack"
+                            android:textCursorDrawable="@null"
+                            android:textAllCaps="true"
+                            android:textSize="14dp"/>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:background="@drawable/bg_shape_kategori"
+                        android:padding="15dp"
+                        android:gravity="center"
+                        android:layout_weight="1">
+
+                        <TextView
+                            android:id="@+id/textnomorcontainer"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/neuron_regular"
+                            android:textSize="13dp"
+                            android:text="Foto Nomor Container"/>
+
+                        <LinearLayout
+                            android:id="@+id/tombolnocontainer"
+                            android:layout_width="100dp"
+                            android:layout_height="100dp"
+                            android:layout_marginTop="5dp"
+                            android:background="@drawable/bg_image_v2"
+                            android:padding="5dp">
+
+                            <ImageView
+                                android:id="@+id/imagenocontainer"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:scaleType="centerCrop"
+                                android:adjustViewBounds="true"
+                                android:src="@drawable/vec_add_image"/>
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:padding="15dp"
+                        android:gravity="center"
+                        android:background="@drawable/bg_shape_kategori"
+                        android:layout_weight="1">
+
+                        <TextView
+                            android:id="@+id/textcscplate"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/neuron_regular"
+                            android:textSize="13dp"
+                            android:text="Foto CSC Plate"/>
+
+                        <LinearLayout
+                            android:id="@+id/tombolcsc"
+                            android:layout_width="100dp"
+                            android:layout_height="100dp"
+                            android:layout_marginTop="5dp"
+                            android:background="@drawable/bg_image_v2"
+                            android:padding="5dp">
+
+                            <ImageView
+                                android:id="@+id/imagecsc"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:scaleType="centerCrop"
+                                android:adjustViewBounds="true"
+                                android:src="@drawable/vec_add_image"/>
+                        </LinearLayout>
+
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/bg_shape_kategori"
+                    android:orientation="vertical"
+                    android:paddingLeft="15dp"
+                    android:paddingRight="15dp"
+                    android:paddingTop="15dp"
+                    android:paddingBottom="15dp"
+                    android:layout_marginTop="10dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:fontFamily="@font/neuron_regular"
+                        android:textSize="13dp"
+                        android:text="Owner"/>
+
+                    <Spinner
+                        android:id="@+id/listowner"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/neuron_regular"
+                        android:textColor="@color/colorblack"
+                        android:layout_marginTop="5dp"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="10dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/bg_shape_kategori"
+                        android:orientation="vertical"
+                        android:paddingLeft="15dp"
+                        android:paddingRight="15dp"
+                        android:paddingTop="15dp"
+                        android:paddingBottom="15dp"
+                        android:layout_weight="1">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:fontFamily="@font/neuron_regular"
+                            android:textSize="13dp"
+                            android:text="Size"/>
+
+                        <Spinner
+                            android:id="@+id/listsize"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/neuron_regular"
+                            android:layout_marginTop="5dp"
+                            android:textColor="@color/colorblack" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/bg_shape_kategori"
+                        android:orientation="vertical"
+                        android:paddingLeft="15dp"
+                        android:paddingRight="15dp"
+                        android:paddingTop="15dp"
+                        android:paddingBottom="15dp"
+                        android:layout_weight="1">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:fontFamily="@font/neuron_regular"
+                            android:textSize="13dp"
+                            android:text="Type"/>
+
+                        <Spinner
+                            android:id="@+id/listtipe"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/neuron_regular"
+                            android:layout_marginTop="5dp"
+                            android:textColor="@color/colorblack"/>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/bg_shape_kategori"
+                    android:orientation="vertical"
+                    android:paddingLeft="15dp"
+                    android:paddingRight="15dp"
+                    android:paddingTop="15dp"
+                    android:paddingBottom="15dp"
+                    android:layout_marginTop="10dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:fontFamily="@font/neuron_regular"
+                        android:textSize="13dp"
+                        android:text="Haulier"/>
+
+                    <EditText
+                        android:id="@+id/inputhaulier"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@null"
+                        android:fontFamily="@font/neuron_regular"
+                        android:hint="contoh : UU XXXX UUU"
+                        android:layout_marginTop="5dp"
+                        android:inputType="textVisiblePassword|textNoSuggestions"
+                        android:textColor="@color/colorblack"
+                        android:textCursorDrawable="@null"
+                        android:textAllCaps="true"
+                        android:textSize="14dp"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/bg_shape_kategori"
+                    android:orientation="vertical"
+                    android:paddingLeft="15dp"
+                    android:paddingRight="15dp"
+                    android:paddingTop="15dp"
+                    android:paddingBottom="15dp"
+                    android:layout_marginTop="10dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:fontFamily="@font/neuron_regular"
+                        android:textSize="13dp"
+                        android:text="DMF"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <Spinner
+                            android:id="@+id/listmonth"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/neuron_regular"
+                            android:layout_marginTop="5dp"
+                            android:textColor="@color/colorblack"
+                            android:layout_weight="1"/>
+
+                        <Spinner
+                            android:id="@+id/listyears"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/neuron_regular"
+                            android:layout_marginTop="5dp"
+                            android:textColor="@color/colorblack"
+                            android:layout_marginLeft="10dp"
+                            android:layout_weight="1"/>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="2"/>
+
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="10dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/bg_shape_kategori"
+                        android:orientation="vertical"
+                        android:paddingLeft="15dp"
+                        android:paddingRight="15dp"
+                        android:paddingTop="15dp"
+                        android:paddingBottom="15dp"
+                        android:layout_weight="1">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:fontFamily="@font/neuron_regular"
+                            android:textSize="13dp"
+                            android:text="Grade"/>
+
+                        <Spinner
+                            android:id="@+id/listgrade"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/neuron_regular"
+                            android:layout_marginTop="5dp"
+                            android:textColor="@color/colorblack" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:visibility="invisible"
+                        android:layout_weight="1">
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="10dp">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/bg_shape_kategori"
+                        android:orientation="vertical"
+                        android:paddingLeft="15dp"
+                        android:paddingRight="15dp"
+                        android:paddingTop="15dp"
+                        android:paddingBottom="15dp"
+                        android:layout_weight="1">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:fontFamily="@font/neuron_regular"
+                            android:textSize="13dp"
+                            android:text="Tare"/>
+
+                        <EditText
+                            android:id="@+id/inputtare"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@null"
+                            android:fontFamily="@font/neuron_regular"
+                            android:hint="0"
+                            android:layout_marginTop="5dp"
+                            android:inputType="number"
+                            android:textColor="@color/colorblack"
+                            android:textSize="14dp"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/bg_shape_kategori"
+                        android:orientation="vertical"
+                        android:paddingLeft="15dp"
+                        android:paddingRight="15dp"
+                        android:paddingTop="15dp"
+                        android:paddingBottom="15dp"
+                        android:layout_weight="1">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:fontFamily="@font/neuron_regular"
+                            android:textSize="13dp"
+                            android:text="Payload"/>
+
+                        <EditText
+                            android:id="@+id/inputpayload"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@null"
+                            android:fontFamily="@font/neuron_regular"
+                            android:hint="0"
+                            android:layout_marginTop="5dp"
+                            android:inputType="number"
+                            android:textColor="@color/colorblack"
+                            android:textSize="14dp"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/bg_shape_kategori"
+                        android:orientation="vertical"
+                        android:paddingLeft="15dp"
+                        android:paddingRight="15dp"
+                        android:paddingTop="15dp"
+                        android:paddingBottom="15dp"
+                        android:layout_weight="1">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:fontFamily="@font/neuron_regular"
+                            android:textSize="13dp"
+                            android:text="Maxgross"/>
+
+                        <EditText
+                            android:id="@+id/inputmaxgross"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@null"
+                            android:fontFamily="@font/neuron_regular"
+                            android:hint="0"
+                            android:layout_marginTop="5dp"
+                            android:inputType="number"
+                            android:textColor="@color/colorblack"
+                            android:textSize="14dp"/>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/bg_shape_kategori"
+                    android:orientation="vertical"
+                    android:paddingLeft="15dp"
+                    android:paddingRight="15dp"
+                    android:paddingTop="15dp"
+                    android:paddingBottom="15dp"
+                    android:layout_marginTop="10dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:fontFamily="@font/neuron_regular"
+                        android:textSize="13dp"
+                        android:text="Wash"/>
+
+                    <Spinner
+                        android:id="@+id/listwash"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/neuron_regular"
+                        android:textColor="@color/colorblack"
+                        android:layout_marginTop="5dp"/>
+                </LinearLayout>
+
+            </LinearLayout>
+        </ScrollView>
+
+        <LinearLayout
+            android:id="@+id/layoutbottom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding ="10dp"
+            android:layout_alignParentBottom="true">
+
+            <LinearLayout
+                android:id="@+id/tombollanjut"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:gravity="center"
+                android:background="@drawable/bg_button_on">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Lanjutkan"
+                    android:fontFamily="@font/neuron_regular"
+                    android:textStyle="bold"
+                    android:textColor="@color/colorwhite"/>
+
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+
+</FrameLayout>

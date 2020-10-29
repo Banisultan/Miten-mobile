@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="left|center"
+    android:layout_marginTop="5dp"
+    android:id="@+id/tombolkategori"
+    android:layout_gravity="top"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_shape_kategori"
+        android:gravity="center|left"
+        android:padding="15dp">
+
+        <ImageView
+            android:id="@+id/imgkategori"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/vec_search_v2"/>
+
+        <TextView
+            android:id="@+id/textkategori"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="Stock Duration Report"
+            android:gravity="center|left"
+            android:layout_toRightOf="@id/imgkategori"
+            android:layout_toLeftOf="@id/imgarrow"
+            android:textSize="15dp"
+            android:layout_marginLeft="10dp"
+            android:textColor="@color/colorblack"
+            android:fontFamily="@font/neuron_regular"/>
+
+        <ImageView
+            android:id="@+id/imgarrow"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/vec_arrow"/>
+    </RelativeLayout>
+
+
+</LinearLayout>

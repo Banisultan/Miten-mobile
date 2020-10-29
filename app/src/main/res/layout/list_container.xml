@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="5dp">
+
+    <RelativeLayout
+        android:id="@+id/listsurvei"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_shape_v7"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:paddingLeft="13dp"
+        android:paddingTop="15dp"
+        android:paddingBottom="15dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@+id/layoutstatus">
+
+            <LinearLayout
+                android:id="@+id/layoutkondisi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_shape_kondisi_waiting">
+
+                <TextView
+                    android:id="@+id/textcondition"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:fontFamily="@font/neuron_black"
+                    android:gravity="center"
+                    android:text="AV"
+                    android:textColor="@color/colorwhite"
+                    android:textSize="30dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@id/imagecontainer"
+                android:gravity="center|left"
+                android:layout_gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textcontainer"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/neuron_regular"
+                    android:text="Container 1412 UI 233"
+                    android:textColor="@color/colorblack_v2"
+                    android:textSize="@dimen/normal_judul_alert"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/textketerangan"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="0dp"
+                    android:fontFamily="@font/neuron_regular"
+                    android:text="Selesai disurvei  asd  d  a sd "
+                    android:textColor="@color/colorblack_v2"
+                    android:textSize="@dimen/normal_text" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/layoutstatus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:gravity="center"
+            android:layout_marginRight="20dp"
+            android:layout_centerVertical="true"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/imagestatus"
+                android:layout_width="25dp"
+                android:layout_height="25dp"/>
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

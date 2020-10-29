@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="20dp"
+        android:gravity="center">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_shape_v7"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginBottom="20dp"
+                android:layout_marginTop="20dp"
+                android:gravity="center">
+
+                <TextView
+                    android:id="@+id/textmessage"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="15dp"
+                    android:fontFamily="@font/neuron_regular"
+                    android:gravity="center"
+                    android:textColor="@color/colorblack"
+                    android:textSize="@dimen/normal_judul"
+                    android:layout_marginTop="10dp"
+                    android:text="Pilih Posisi Foto"/>
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/viewposisi"
+                    android:layout_below="@id/textmessage"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+                <LinearLayout
+                    android:id="@+id/tombolno"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/bg_button_yes"
+                    android:layout_alignParentRight="true"
+                    android:padding="7dp"
+                    android:gravity="center">
+
+                    <ImageView
+                        android:id="@+id/imageclose"
+                        android:layout_width="15dp"
+                        android:layout_height="15dp"
+                        android:fontFamily="@font/neuron_regular"
+                        android:textColor="@color/colorwhite"
+                        android:textStyle="bold"/>
+                </LinearLayout>
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</LinearLayout>

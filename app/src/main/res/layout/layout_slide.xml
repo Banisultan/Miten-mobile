@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorbg">
+
+        <ImageView
+            android:id="@+id/img_bg"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="fitXY"/>
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="30dp"
+            android:src="@drawable/img_logo_notext"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="40dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textjudul"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="CONTAINER"
+                android:gravity="center"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:textColor="@color/colorwhite"
+                android:fontFamily="@font/neuron_regular"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_marginTop="15dp"
+                android:fontFamily="@font/neuron_regular"
+                android:textColor="@color/colorwhite"
+                android:text="@string/textdefault"/>
+
+            <LinearLayout
+                android:id="@+id/tombollanjut"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:paddingTop="15dp"
+                android:paddingBottom="15dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/bg_button_on2">
+
+                <TextView
+                    android:id="@+id/texttombol"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Lanjutkan"
+                    android:fontFamily="@font/neuron_regular"
+                    android:textColor="@color/colorwhite"
+                    android:textStyle="bold"/>
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>

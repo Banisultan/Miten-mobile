@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- Background -->
+    <item>
+        <shape>
+            <solid android:color="@color/colorwhite" />
+            <corners android:radius="5dp"/>
+        </shape>
+    </item>
+
+    <item
+        android:drawable="@drawable/vec_logo_2"
+        android:bottom="50dp"
+        android:top="50dp"
+        android:left="50dp"
+        android:right="50dp">
+
+    </item>
+
+</layer-list>

@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_shape_list_view">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/layoutheader"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_shape_grey_v2"
+            android:gravity="center"
+            android:padding="5dp">
+
+            <TextView
+                android:id="@+id/textheader"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="FRONT"
+                android:textSize="15dp"
+                android:textStyle="bold"
+                android:textColor="@color/colorwhite"
+                android:fontFamily="@font/neuron_regular"/>
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingRight="20dp"
+            android:paddingLeft="20dp"
+            android:paddingTop="10dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_toLeftOf="@id/layoutbutton"
+                android:orientation="horizontal">
+
+                <RelativeLayout
+                    android:layout_width="50dp"
+                    android:layout_height="50dp">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/vec_photo"
+                        android:layout_marginRight="5dp"/>
+
+
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/textcomponent"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="COFF"
+                    android:layout_marginLeft="10dp"
+                    android:textStyle="bold"
+                    android:textSize="18dp"
+                    android:fontFamily="@font/neuron_regular"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layoutbutton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true">
+
+
+                <ImageView
+                    android:id="@+id/tomboladd"
+                    android:layout_width="35dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/vec_add"
+                    android:background="@drawable/bg_shape_v2"
+                    android:padding="5dp"/>
+            </LinearLayout>
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:paddingBottom="20dp">
+
+            <LinearLayout
+                android:visibility="gone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_shape_grey_v2"
+                android:gravity="center"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Gambar Kerusakan"
+                    android:textSize="15dp"
+                    android:textStyle="bold"
+                    android:textColor="@color/colorwhite"
+                    android:fontFamily="@font/neuron_regular"/>
+
+                <TextView
+                    android:id="@+id/textcount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="2"
+                    android:textStyle="bold"
+                    android:textColor="@color/colorwhite"
+                    android:background="@drawable/bg_shape_v3"
+                    android:paddingLeft="7dp"
+                    android:paddingRight="7dp"
+                    android:paddingTop="2dp"
+                    android:paddingBottom="2dp"
+                    android:textSize="15dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginLeft="10dp"
+                    android:fontFamily="@font/neuron_regular"/>
+            </LinearLayout>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/viewkerusakan"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"/>
+
+            <TextView
+                android:id="@+id/textempty"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:text="Tidak ada foto"
+                android:fontFamily="@font/neuron_regular"
+                android:gravity="center"/>
+
+            <LinearLayout
+                android:id="@+id/layoutperbaikan"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    android:paddingLeft="0dp"
+                    android:paddingRight="10dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Foto Perbaikan"
+                        android:textSize="15dp"
+                        android:textStyle="bold"
+                        android:textColor="@color/colorblack"
+                        android:fontFamily="@font/neuron_regular"/>
+
+                    <TextView
+                        android:id="@+id/textcountperbaikan"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="2"
+                        android:textStyle="bold"
+                        android:textColor="@color/colorwhite"
+                        android:background="@drawable/bg_shape_v4"
+                        android:paddingLeft="7dp"
+                        android:paddingRight="7dp"
+                        android:paddingTop="2dp"
+                        android:paddingBottom="2dp"
+                        android:textSize="15dp"
+                        android:layout_marginLeft="10dp"
+                        android:fontFamily="@font/neuron_regular"/>
+                </LinearLayout>
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/viewperbaikan"
+                    android:layout_marginTop="5dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"/>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "280733198738",
+    "firebase_url": "https://mitn-dab0a.firebaseio.com",
+    "project_id": "mitn-dab0a",
+    "storage_bucket": "mitn-dab0a.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:280733198738:android:88270473bd833b3bcb794b",
+        "android_client_info": {
+          "package_name": "id.bnn.convey"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "280733198738-fo1n6qb2g9ep0od0ncb2l9eg0i52lfup.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBvtxV2KDHqrugGTILdz6Jpx5IriX-c7mE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "280733198738-fo1n6qb2g9ep0od0ncb2l9eg0i52lfup.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

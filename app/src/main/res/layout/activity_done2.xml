@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FinalActivity.DoneActivity">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/img_bg_white"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:layout_margin="20dp">
+
+        <TextView
+            android:id="@+id/textjudul"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/neuron_regular"
+            android:textSize="@dimen/normal_judul_big"
+            android:textStyle="bold"
+            android:textColor="@color/colorblack_v2"
+            android:gravity="center"
+            android:text="Success"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textjudul"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_shape_v8"
+                android:gravity="center"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="25dp"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/bg_line_left"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:paddingTop="20dp"
+                    android:paddingBottom="20dp"
+                    android:gravity="left|center">
+
+                    <ImageView
+                        android:id="@+id/imagedone"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"/>
+
+                    <TextView
+                        android:id="@+id/textmessage"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/neuron_regular"
+                        android:textSize="@dimen/normal_judul_input"
+                        android:textStyle="normal"
+                        android:textColor="@color/colorblack_v2"
+                        android:layout_marginLeft="10dp"
+                        android:text="Pengisian survey berhasil"/>
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/tomboloke"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_button_on"
+                android:layout_marginTop="10dp"
+                android:layout_gravity="right">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Oke"
+                    android:textStyle="bold"
+                    android:textColor="@color/colorwhite"
+                    android:gravity="center"
+                    android:paddingTop="10dp"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="20dp"
+                    android:paddingBottom="10dp"
+                    android:textSize="@dimen/normal_button"
+                    android:background="?attr/selectableItemBackground"
+                    android:fontFamily="@font/neuron_regular"/>
+            </LinearLayout>
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

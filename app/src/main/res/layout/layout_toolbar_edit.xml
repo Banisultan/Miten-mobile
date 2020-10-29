@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorwhitebg"
+            android:gravity="center|left"
+            android:padding="20dp">
+
+            <ImageView
+                android:id="@+id/tombolkembali"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/vec_back"
+                android:paddingRight="10dp"/>
+
+            <TextView
+                android:id="@+id/texttoolbar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:fontFamily="@font/neuron_regular"
+                android:textStyle="bold"
+                android:text="-"
+                android:textSize="25dp"
+                android:textColor="@color/colordasar" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/tomboledit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:orientation="horizontal"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:gravity="left"
+            android:background="@drawable/bg_button">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/vec_edit"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="Edit"
+                android:gravity="center"
+                android:layout_marginLeft="3dp"
+                android:textColor="@color/colorwhite"
+                android:fontFamily="@font/neuron_regular"/>
+        </LinearLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

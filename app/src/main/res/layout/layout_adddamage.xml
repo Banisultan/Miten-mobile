@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_shape_v7"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_toLeftOf="@id/layoutbutton"
+                android:orientation="horizontal">
+
+                <RelativeLayout
+                    android:layout_width="50dp"
+                    android:layout_height="50dp">
+
+                    <ImageView
+                        android:id="@+id/imagefoto"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginRight="5dp"/>
+
+                    <TextView
+                        android:id="@+id/textcount"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="2"
+                        android:textStyle="bold"
+                        android:textColor="@color/colorwhite"
+                        android:background="@drawable/bg_shape_v3"
+                        android:paddingLeft="7dp"
+                        android:paddingRight="7dp"
+                        android:textSize="15dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentBottom="true"
+                        android:fontFamily="@font/neuron_regular"/>
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/textcomponent"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="COFF"
+                    android:layout_marginLeft="10dp"
+                    android:textStyle="bold"
+                    android:textSize="14dp"
+                    android:fontFamily="@font/neuron_regular"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layoutbutton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true">
+
+                <ImageView
+                    android:id="@+id/tomboledit"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:background="@drawable/bg_shape_v2"
+                    android:layout_marginRight="10dp"
+                    android:padding="5dp"/>
+
+                <ImageView
+                    android:id="@+id/tombolhapus"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:background="@drawable/bg_shape_v2"
+                    android:padding="5dp"/>
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+
+
+</LinearLayout>

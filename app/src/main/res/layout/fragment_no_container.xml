@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FinalActivity.AddSurveyinFragment.NoContainerFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorwhite">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_above="@id/layoutbottom"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:paddingTop="10dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/surveyin_judulnocontainer"
+                android:gravity="center"
+                android:fontFamily="@font/neuron_regular"
+                android:textSize="@dimen/normal_judul_input"
+                android:textStyle="normal"
+                android:textColor="@color/colorblack_v2"/>
+
+            <LinearLayout
+                android:id="@+id/buttoninput"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_shape_v7"
+                android:orientation="vertical"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:paddingTop="15dp"
+                android:paddingBottom="15dp"
+                android:layout_marginTop="10dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/neuron_regular"
+                    android:text="@string/surveyin_nocontainer"
+                    android:textColor="@color/colorblack_v2"
+                    android:textSize="@dimen/normal_text"/>
+
+                <EditText
+                    android:id="@+id/inputcontainernumber"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@null"
+                    android:fontFamily="@font/neuron_regular"
+                    android:hint="contoh : UUUUXXXXXX"
+                    android:inputType="textCapCharacters|textVisiblePassword"
+                    android:textAllCaps="true"
+                    android:textColor="@color/colorblack_v2"
+                    android:maxLines="1"
+                    android:maxLength="11"
+                    android:textStyle="bold"
+                    android:textSize="@dimen/normal_input" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layoutbottom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding ="10dp"
+            android:background="@drawable/bg_layout_bottom"
+            android:layout_alignParentBottom="true">
+
+            <LinearLayout
+                android:id="@+id/tombollanjut"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_button_on">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="?attr/selectableItemBackground"
+                    android:text="@string/surveyin_buttonnext"
+                    android:fontFamily="@font/neuron_regular"
+                    android:textStyle="bold"
+                    android:padding="10dp"
+                    android:gravity="center"
+                    android:textSize="@dimen/normal_button"
+                    android:textColor="@color/colorwhite"/>
+
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+
+</FrameLayout>

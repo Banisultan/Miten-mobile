@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@null">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_shape_v7"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="50dp"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:gravity="center">
+
+                <ImageView
+                    android:id="@+id/imagemessage"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="20dp"/>
+
+                <TextView
+                    android:id="@+id/textjudul"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/neuron_regular"
+                    android:textSize="@dimen/normal_judul_alert"
+                    android:textStyle="bold"
+                    android:textColor="@color/colorblack_v2"
+                    android:layout_marginTop="10dp"
+                    android:text="@string/msg_warning"/>
+
+                <TextView
+                    android:id="@+id/textmessage"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="15dp"
+                    android:fontFamily="@font/neuron_regular"
+                    android:gravity="center"
+                    android:textSize="@dimen/normal_text"
+                    android:textColor="@color/colorblack_v2"
+                    android:text="Sedang melakukan pengecekan"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/buttonoke"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_button_bottom_v2"
+                android:gravity="center">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="?attr/selectableItemBackground"
+                    android:fontFamily="@font/neuron_regular"
+                    android:textColor="@color/colorwhite"
+                    android:textStyle="bold"
+                    android:textSize="@dimen/normal_text"
+                    android:gravity="center"
+                    android:paddingTop="8dp"
+                    android:paddingBottom="8dp"
+                    android:text="@string/msg_oke"/>
+            </LinearLayout>
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</LinearLayout>

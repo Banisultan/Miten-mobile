@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FinalActivity.AddSurveyinFragment.SimpanSurveyFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorwhite">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:paddingTop="10dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Simpan Data Survey ?"
+                android:gravity="center"
+                android:fontFamily="@font/neuron_regular"
+                android:textSize="@dimen/normal_judul_input"
+                android:textStyle="bold"
+                android:textColor="@color/colorblack_v2"/>
+
+            <ImageView
+                android:id="@+id/imagewarning"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="10dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Mohon periksa kembali pengisian survey anda, agar tidak terjadi kesalahan dalam pengisian data"
+                android:gravity="center"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:textSize="@dimen/normal_text"
+                android:textColor="@color/colorblack_v2"
+                android:fontFamily="@font/neuron_regular"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:layout_marginTop="5dp">
+
+                <LinearLayout
+                    android:id="@+id/tombolkembali"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/bg_button_off"
+                    android:layout_weight="1">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="Kembali"
+                        android:fontFamily="@font/neuron_regular"
+                        android:textColor="@color/colororange"
+                        android:textStyle="bold"
+                        android:gravity="center"
+                        android:padding="10dp"
+                        android:background="?attr/selectableItemBackground"
+                        android:textSize="@dimen/normal_button"/>
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:id="@+id/tombolsimpan"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/bg_button_on"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="1">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="Simpan"
+                        android:fontFamily="@font/neuron_regular"
+                        android:background="?attr/selectableItemBackground"
+                        android:textColor="@color/colorwhite"
+                        android:textStyle="bold"
+                        android:gravity="center"
+                        android:textSize="@dimen/normal_button"
+                        android:padding="10dp"/>
+                </LinearLayout>
+
+
+
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+
+</FrameLayout>

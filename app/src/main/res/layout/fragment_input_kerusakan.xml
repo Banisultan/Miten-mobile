@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorwhite"
+    tools:context=".FragmentSurvey.InputKerusakan">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:paddingTop="10dp"
+            android:layout_above="@id/layoutbottom"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/tomboladdkerusakan"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:background="@drawable/bg_shape"
+                android:padding="20dp">
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/vec_add_v3"
+                    android:padding="5dp"
+                    android:background="@drawable/bg_button_on"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:fontFamily="@font/neuron_regular"
+                    android:textSize="14sp"
+                    android:text="Tambahkan Foto Kerusakan "/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="10dp">
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/viewlist"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/colorwhite"/>
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layoutbottom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="10dp"
+            android:layout_alignParentBottom="true">
+
+            <LinearLayout
+                android:id="@+id/tombolprev"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="15dp"
+                android:background="@drawable/bg_button_off"
+                android:layout_weight="1"
+                android:layout_marginRight="5dp"
+                android:gravity="center">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Kembali"
+                    android:fontFamily="@font/neuron_regular"
+                    android:textStyle="bold"
+                    android:textColor="@color/colororange"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/tombollanjut"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="15dp"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:layout_marginLeft="5dp"
+                android:background="@drawable/bg_button_on">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Lanjutkan"
+                    android:fontFamily="@font/neuron_regular"
+                    android:textStyle="bold"
+                    android:textColor="@color/colorwhite"/>
+            </LinearLayout>
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</FrameLayout>

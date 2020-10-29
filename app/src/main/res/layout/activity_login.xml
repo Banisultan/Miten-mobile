@@ -1,0 +1,285 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.LoginActivity">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/img_bg_white"/>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@drawable/img_logo_warna"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="LOGIN"
+                android:textSize="19dp"
+                android:textStyle="bold"
+                android:layout_marginTop="15dp"
+                android:textColor="@color/colorblack"
+                android:fontFamily="@font/neuron_regular"/>
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/imageprofile"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/bg_oval"
+                android:src="@drawable/img_user"/>
+
+            <LinearLayout
+                android:id="@+id/layoutbeforeproses"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginLeft="50dp"
+                android:layout_marginRight="50dp"
+                android:layout_marginTop="10dp"
+                android:gravity="center">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Silahkan scan wajah untuk melanjutkan \nlogin anda"
+                    android:textStyle="normal"
+                    android:gravity="center"
+                    android:textColor="@color/colorblack"
+                    android:textSize="13dp"
+                    android:fontFamily="@font/neuron_regular"/>
+
+                <LinearLayout
+                    android:id="@+id/tombolscan"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/bg_button_on"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="20dp"
+                    android:gravity="center">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Pindai Wajah"
+                        android:textStyle="bold"
+                        android:textColor="@color/colorwhite"
+                        android:textSize="14dp"
+                        android:fontFamily="@font/neuron_regular"/>
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="atau"
+                    android:fontFamily="@font/neuron_regular"
+                    android:layout_marginTop="10dp"/>
+
+                <LinearLayout
+                    android:id="@+id/tombolusername"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/bg_button_off"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center">
+
+                    <ImageView
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:src="@drawable/vec_user2"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Login dengan username"
+                        android:textStyle="bold"
+                        android:textColor="@color/colororange"
+                        android:layout_marginLeft="10dp"
+                        android:textSize="14dp"
+                        android:fontFamily="@font/neuron_regular"/>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layoutafterproses"
+                android:visibility="visible"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textnama"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Rifki Vianda"
+                    android:layout_gravity="center"
+                    android:textStyle="bold"
+                    android:fontFamily="@font/neuron_regular"
+                    android:layout_marginTop="10dp"/>
+
+                <LinearLayout
+                    android:id="@+id/layoutusername"
+                    android:visibility="visible"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="40dp"
+                    android:layout_marginRight="40dp"
+                    android:layout_marginTop="20dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Username anda"
+                        android:fontFamily="@font/neuron_regular"
+                        android:textSize="12dp"/>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingBottom="2dp"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="5dp"
+                        android:background="@drawable/bg_underline">
+
+                        <EditText
+                            android:id="@+id/inputusername"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="Masukkan Username"
+                            android:fontFamily="@font/neuron_regular"
+                            android:background="@null"
+                            android:textSize="15dp"
+                            android:paddingTop="5dp"
+                            android:paddingBottom="5dp"
+                            android:inputType="textVisiblePassword|textNoSuggestions"/>
+                    </RelativeLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="40dp"
+                    android:layout_marginRight="40dp"
+                    android:layout_marginTop="20dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Password anda"
+                        android:fontFamily="@font/neuron_regular"
+                        android:textSize="12dp"/>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingBottom="2dp"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="5dp"
+                        android:background="@drawable/bg_underline">
+
+                        <EditText
+                            android:id="@+id/inputpassword"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="Masukkan Password"
+                            android:fontFamily="@font/neuron_regular"
+                            android:background="@null"
+                            android:textSize="15dp"
+                            android:paddingTop="5dp"
+                            android:paddingBottom="5dp"
+                            android:inputType="textPassword"
+                            android:layout_toLeftOf="@id/tomboleye"/>
+
+                        <ImageView
+                            android:id="@+id/tomboleye"
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:layout_alignParentRight="true"
+                            android:src="@drawable/vec_eye_on"/>
+                    </RelativeLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="60dp"
+                    android:layout_marginLeft="60dp"
+                    android:layout_marginTop="20dp"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:id="@+id/tombollogin"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/bg_button_on"
+                        android:paddingTop="10dp"
+                        android:paddingBottom="10dp"
+                        android:gravity="center">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Login"
+                            android:textStyle="bold"
+                            android:textColor="@color/colorwhite"
+                            android:textSize="14dp"
+                            android:fontFamily="@font/neuron_regular"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/tombolpindai"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/bg_button_off"
+                        android:paddingTop="10dp"
+                        android:paddingBottom="10dp"
+                        android:layout_marginTop="10dp"
+                        android:gravity="center">
+
+                        <TextView
+                            android:id="@+id/textpindai"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Pindai Kembali"
+                            android:textColor="@color/colororange"
+                            android:textStyle="bold"
+                            android:textSize="14dp"
+                            android:fontFamily="@font/neuron_regular"/>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+    <include
+        android:visibility="gone"
+        android:id="@+id/layoutmessage"
+        layout="@layout/layout_message_new"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+</RelativeLayout>

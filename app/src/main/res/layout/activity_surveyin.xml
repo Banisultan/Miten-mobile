@@ -1,0 +1,327 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/colorwhite"
+    tools:context=".FinalActivity.SurveyinActivity">
+
+    <include
+        android:id="@+id/layouttoolbar"
+        layout="@layout/layout_toolbar_v4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"/>
+
+    <include
+        android:id="@+id/layout_text"
+        layout="@layout/layouttext"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/layouttoolbar"/>
+
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+        android:id="@+id/swiperefresh"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/layout_text">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/layoutcount"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingTop="15dp"
+                android:paddingBottom="15dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/bg_shape_waiting"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:layout_weight="1"
+                    android:layout_marginRight="10dp"
+                    android:padding="10dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Menunggu"
+                        android:textColor="@color/colorwhite"
+                        android:textSize="14dp"
+                        android:fontFamily="@font/neuron_regular"/>
+
+                    <TextView
+                        android:id="@+id/textcountwaiting"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="-"
+                        android:textColor="@color/colorwhite"
+                        android:textSize="20dp"
+                        android:textStyle="bold"
+                        android:layout_marginTop="5dp"
+                        android:fontFamily="@font/neuron_regular"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/bg_shape_approve"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="10dp"
+                    android:padding="10dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Selesai"
+                        android:textColor="@color/colorwhite"
+                        android:textSize="14dp"
+                        android:fontFamily="@font/neuron_regular"/>
+
+                    <TextView
+                        android:id="@+id/textcountapprove"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="-"
+                        android:textColor="@color/colorwhite"
+                        android:textSize="20dp"
+                        android:textStyle="bold"
+                        android:layout_marginTop="5dp"
+                        android:fontFamily="@font/neuron_regular"/>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layouttab"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="10dp"
+                android:background="@drawable/bg_shape_bottom_v2"
+                android:orientation="horizontal">
+
+                <RelativeLayout
+                    android:id="@+id/layoutwaiting"
+                    android:layout_width="match_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/bg_shape_tab_left">
+
+                    <TextView
+                        android:id="@+id/textwaiting"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Waiting"
+                        android:textColor="@color/colorblack"
+                        android:layout_centerHorizontal="true"
+                        android:layout_below="@id/textcountwaitingv2"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginTop="5dp"
+                        android:textSize="13dp"
+                        android:fontFamily="@font/neuron_regular"/>
+
+                    <TextView
+                        android:id="@+id/textcountwaitingv2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="-"
+                        android:textStyle="bold"
+                        android:textColor="@color/colororange"
+                        android:layout_centerHorizontal="false"
+                        android:layout_alignParentRight="true"
+                        android:background="@drawable/bg_shape_v5"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="5dp"
+                        android:paddingTop="2dp"
+                        android:paddingBottom="2dp"
+                        android:textSize="10dp"
+                        android:layout_marginRight="3dp"
+                        android:fontFamily="@font/neuron_regular"/>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/layoutapprove"
+                    android:layout_width="match_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1">
+
+                    <TextView
+                        android:id="@+id/textapprove"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Approve"
+                        android:layout_centerHorizontal="true"
+                        android:textColor="@color/colorgrey"
+                        android:layout_below="@id/textcountapprovev2"
+                        android:layout_marginTop="5dp"
+                        android:textSize="13dp"
+                        android:fontFamily="@font/neuron_regular"/>
+
+                    <TextView
+                        android:id="@+id/textcountapprovev2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="-"
+                        android:textStyle="bold"
+                        android:textColor="@color/colorgrey"
+                        android:background="@drawable/bg_shape_v2"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="5dp"
+                        android:paddingTop="2dp"
+                        android:paddingBottom="2dp"
+                        android:textSize="10dp"
+                        android:layout_marginRight="3dp"
+                        android:layout_alignParentRight="true"
+                        android:fontFamily="@font/neuron_regular"/>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/layoutrepair"
+                    android:layout_width="match_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1">
+
+                    <TextView
+                        android:id="@+id/textcountrepair"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="-"
+                        android:textStyle="bold"
+                        android:textColor="@color/colorgrey"
+                        android:layout_alignParentRight="true"
+                        android:background="@drawable/bg_shape_v2"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="5dp"
+                        android:paddingTop="2dp"
+                        android:paddingBottom="2dp"
+                        android:textSize="10dp"
+                        android:layout_marginRight="3dp"
+                        android:fontFamily="@font/neuron_regular"/>
+
+                    <TextView
+                        android:id="@+id/textrepair"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_below="@id/textcountrepair"
+                        android:text="Repair"
+                        android:textColor="@color/colorgrey"
+                        android:layout_marginTop="5dp"
+                        android:textSize="13dp"
+                        android:fontFamily="@font/neuron_regular"/>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/layoutdonerepair"
+                    android:layout_width="match_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1">
+
+                    <TextView
+                        android:id="@+id/textcountapproverepair"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="-"
+                        android:textStyle="bold"
+                        android:textColor="@color/colorgrey"
+                        android:layout_alignParentRight="true"
+                        android:background="@drawable/bg_shape_v2"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="5dp"
+                        android:paddingTop="2dp"
+                        android:paddingBottom="2dp"
+                        android:textSize="10dp"
+                        android:layout_marginRight="3dp"
+                        android:fontFamily="@font/neuron_regular"/>
+
+                    <TextView
+                        android:id="@+id/textdonerepair"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Check Repair"
+                        android:textColor="@color/colorgrey"
+                        android:layout_centerHorizontal="true"
+                        android:layout_below="@id/textcountapproverepair"
+                        android:gravity="center"
+                        android:layout_marginTop="5dp"
+                        android:textSize="12dp"
+                        android:fontFamily="@font/neuron_regular"/>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/layoutdone"
+                    android:layout_width="match_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1">
+
+                    <TextView
+                        android:id="@+id/textcountdone"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="-"
+                        android:textStyle="bold"
+                        android:textColor="@color/colorgrey"
+                        android:layout_alignParentRight="true"
+                        android:background="@drawable/bg_shape_v2"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="5dp"
+                        android:paddingTop="2dp"
+                        android:paddingBottom="2dp"
+                        android:textSize="10dp"
+                        android:layout_marginRight="3dp"
+                        android:fontFamily="@font/neuron_regular"/>
+
+                    <TextView
+                        android:id="@+id/textdone"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Done"
+                        android:textColor="@color/colorgrey"
+                        android:layout_centerHorizontal="true"
+                        android:layout_below="@id/textcountdone"
+                        android:layout_marginTop="5dp"
+                        android:textSize="13dp"
+                        android:fontFamily="@font/neuron_regular"/>
+                </RelativeLayout>
+            </LinearLayout>
+
+            <androidx.viewpager.widget.ViewPager
+                android:id="@+id/viewpagersurvey"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+            </androidx.viewpager.widget.ViewPager>
+        </LinearLayout>
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+    <LinearLayout
+        android:id="@+id/tomboladd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="30dp"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/bg_button_oval"
+        android:padding="5dp"
+        android:layout_marginRight="20dp">
+
+        <ImageView
+            android:id="@+id/imageadd"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:padding="10dp"/>
+    </LinearLayout>
+
+</RelativeLayout>

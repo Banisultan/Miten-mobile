@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="10dp">
+
+    <LinearLayout
+        android:id="@+id/layoututama"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingBottom="15dp"
+            android:background="@drawable/bg_spinner">
+
+            <LinearLayout
+                android:visibility="gone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_shape_grey_v2"
+                android:gravity="center"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Gambar Kerusakan"
+                    android:textSize="15dp"
+                    android:textStyle="bold"
+                    android:textColor="@color/colorwhite"
+                    android:fontFamily="@font/neuron_regular"/>
+
+                <TextView
+                    android:id="@+id/textcount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="2"
+                    android:textStyle="bold"
+                    android:textColor="@color/colorwhite"
+                    android:background="@drawable/bg_shape_v3"
+                    android:paddingLeft="7dp"
+                    android:paddingRight="7dp"
+                    android:paddingTop="2dp"
+                    android:paddingBottom="2dp"
+                    android:textSize="15dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginLeft="10dp"
+                    android:fontFamily="@font/neuron_regular"/>
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/textheader"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="textheader"
+                android:textSize="@dimen/normal_button"
+                android:textStyle="bold"
+                android:textColor="@color/colorblack_v2"
+                android:fontFamily="@font/neuron_regular"/>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/viewphoto"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:nestedScrollingEnabled="false"
+                android:layout_marginTop="10dp"/>
+
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

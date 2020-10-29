@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_shape_v7"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="50dp"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginBottom="20dp"
+                android:layout_marginTop="20dp"
+                android:gravity="center">
+
+                <ImageView
+                    android:id="@+id/imagemessage"
+                    android:layout_width="wrap_content"
+                    android:layout_height="150dp"
+                    android:layout_marginTop="20dp"/>
+
+                <TextView
+                    android:id="@+id/textmessage"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginBottom="15dp"
+                    android:fontFamily="@font/neuron_regular"
+                    android:gravity="center"
+                    android:textColor="@color/colorblack_v2"
+                    android:textSize="@dimen/normal_text"
+                    android:text="@string/textnotif_1"/>
+
+                <LinearLayout
+                    android:id="@+id/buttonoke"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    android:paddingRight="20dp"
+                    android:paddingLeft="20dp"
+                    android:background="@drawable/bg_button_on"
+                    android:gravity="center">
+
+                    <TextView
+                        android:id="@+id/texttombol"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/neuron_regular"
+                        android:textColor="@color/colorwhite"
+                        android:textStyle="bold"
+                        android:textSize="@dimen/normal_button"
+                        android:text="OKE"/>
+                </LinearLayout>
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</LinearLayout>

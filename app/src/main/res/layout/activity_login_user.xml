@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FinalActivity.LoginUserActivity">
+
+    <ImageView
+        android:id="@+id/imagebg"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="fitXY"/>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/imagelogo"
+                android:layout_width="100dp"
+                android:layout_height="100dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="LOGIN"
+                android:textSize="@dimen/normal_judul"
+                android:textStyle="bold"
+                android:layout_marginTop="15dp"
+                android:textColor="@color/colorblack_v2"
+                android:fontFamily="@font/neuron_regular"/>
+
+            <ImageView
+                android:id="@+id/imageprofile"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginTop="15dp"/>
+
+            <LinearLayout
+                android:visibility="visible"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/layoutusername"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="40dp"
+                    android:layout_marginRight="40dp"
+                    android:layout_marginTop="20dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Username anda"
+                        android:textColor="@color/colorblack_v2"
+                        android:fontFamily="@font/neuron_regular"
+                        android:textSize="@dimen/normal_text"/>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingBottom="2dp"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="5dp"
+                        android:background="@drawable/bg_underline">
+
+                        <EditText
+                            android:id="@+id/inputusername"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="Masukkan Username"
+                            android:fontFamily="@font/neuron_regular"
+                            android:background="@null"
+                            android:textSize="@dimen/normal_input"
+                            android:paddingTop="5dp"
+                            android:paddingBottom="5dp"
+                            android:textColor="@color/colorblack_v2"
+                            android:inputType="textVisiblePassword|textNoSuggestions"/>
+                    </RelativeLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="40dp"
+                    android:layout_marginRight="40dp"
+                    android:layout_marginTop="20dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Password anda"
+                        android:textColor="@color/colorblack_v2"
+                        android:fontFamily="@font/neuron_regular"
+                        android:textSize="@dimen/normal_text"/>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingBottom="2dp"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="5dp"
+                        android:background="@drawable/bg_underline">
+
+                        <EditText
+                            android:id="@+id/inputpassword"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="Masukkan Password"
+                            android:fontFamily="@font/neuron_regular"
+                            android:background="@null"
+                            android:textSize="@dimen/normal_input"
+                            android:paddingTop="5dp"
+                            android:paddingBottom="5dp"
+                            android:inputType="textPassword"
+                            android:textColor="@color/colorblack_v2"
+                            android:layout_toLeftOf="@id/imageeye"/>
+
+                        <ImageView
+                            android:id="@+id/imageeye"
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"/>
+                    </RelativeLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="60dp"
+                    android:layout_marginLeft="60dp"
+                    android:layout_marginTop="30dp"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:id="@+id/tombolkembali"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/bg_button_off"
+                        android:layout_marginRight="10dp"
+                        android:layout_weight="1"
+                        android:gravity="center">
+
+                        <TextView
+                            android:id="@+id/textpindai"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:text="Kembali"
+                            android:textColor="@color/colororange"
+                            android:textStyle="bold"
+                            android:gravity="center"
+                            android:textSize="@dimen/normal_button"
+                            android:paddingTop="10dp"
+                            android:paddingBottom="10dp"
+                            android:background="?attr/selectableItemBackground"
+                            android:fontFamily="@font/neuron_regular"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/tombollogin"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/bg_button_on"
+                        android:layout_weight="1"
+                        android:layout_marginLeft="10dp"
+                        android:gravity="center">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:text="Login"
+                            android:textStyle="bold"
+                            android:textColor="@color/colorwhite"
+                            android:gravity="center"
+                            android:paddingTop="10dp"
+                            android:paddingBottom="10dp"
+                            android:textSize="@dimen/normal_button"
+                            android:background="?attr/selectableItemBackground"
+                            android:fontFamily="@font/neuron_regular"/>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

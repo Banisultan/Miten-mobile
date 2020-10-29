@@ -1,0 +1,528 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".FragmentSurvey.UploadFotoFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/colorwhite"
+                android:padding="20dp"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/bg_shape_kategori"
+                    android:padding="15dp"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:id="@+id/layouttextdepan"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Foto Sisi Depan : "
+                                android:fontFamily="@font/neuron_regular"/>
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content">
+
+                                <TextView
+                                    android:id="@+id/textcountdepan"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="0"
+                                    android:gravity="center"
+                                    android:textStyle="bold"
+                                    android:fontFamily="@font/neuron_regular"/>
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+
+                        <ImageView
+                            android:id="@+id/tombolfotodepan"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:src="@drawable/vec_add_color"
+                            android:background="@drawable/bg_shape"
+                            android:layout_alignParentRight="true"/>
+                    </RelativeLayout>
+
+                    <LinearLayout
+                        android:id="@+id/layoutfotodepan"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:orientation="horizontal"
+                        android:layout_below="@id/layouttextdepan"
+                        android:visibility="gone">
+
+                        <androidx.recyclerview.widget.RecyclerView
+                            android:id="@+id/listfotodepan"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" />
+                    </LinearLayout>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/bg_shape_kategori"
+                    android:padding="15dp"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:id="@+id/layouttext"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Foto Sisi Kiri :"
+                                android:fontFamily="@font/neuron_regular"/>
+
+                            <TextView
+                                android:id="@+id/textcountkiri"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="0"
+                                android:layout_marginLeft="3dp"
+                                android:textStyle="bold"
+                                android:fontFamily="@font/neuron_regular"/>
+                        </LinearLayout>
+
+
+                        <ImageView
+                            android:id="@+id/tombolfotokiri"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:src="@drawable/vec_add_color"
+                            android:background="@drawable/bg_shape"
+                            android:layout_alignParentRight="true"/>
+                    </RelativeLayout>
+
+                    <LinearLayout
+                        android:id="@+id/layoutfotokiri"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:orientation="horizontal"
+                        android:layout_below="@id/layouttext"
+                        android:visibility="gone">
+
+                        <androidx.recyclerview.widget.RecyclerView
+                            android:id="@+id/listfotokiri"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" />
+                    </LinearLayout>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/bg_shape_kategori"
+                    android:padding="15dp"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:id="@+id/layouttextkanan"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Foto Sisi Kanan : "
+                                android:fontFamily="@font/neuron_regular"/>
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content">
+
+                                <TextView
+                                    android:id="@+id/textcountkanan"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="0"
+                                    android:gravity="center"
+                                    android:textStyle="bold"
+                                    android:fontFamily="@font/neuron_regular"/>
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                        <ImageView
+                            android:id="@+id/tombolfotokanan"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:src="@drawable/vec_add_color"
+                            android:background="@drawable/bg_shape"
+                            android:layout_alignParentRight="true"/>
+                    </RelativeLayout>
+
+                    <LinearLayout
+                        android:id="@+id/layoutfotokanan"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:orientation="horizontal"
+                        android:layout_below="@id/layouttextkanan"
+                        android:visibility="gone">
+
+                        <androidx.recyclerview.widget.RecyclerView
+                            android:id="@+id/listfotokanan"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" />
+                    </LinearLayout>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/bg_shape_kategori"
+                    android:padding="15dp"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:id="@+id/layouttextbelakang"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Foto Sisi Belakang : "
+                                android:fontFamily="@font/neuron_regular"/>
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content">
+
+                                <TextView
+                                    android:id="@+id/textcountbelakang"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="0"
+                                    android:gravity="center"
+                                    android:textStyle="bold"
+                                    android:fontFamily="@font/neuron_regular"/>
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                        <ImageView
+                            android:id="@+id/tombolfotobelakang"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:src="@drawable/vec_add_color"
+                            android:background="@drawable/bg_shape"
+                            android:layout_alignParentRight="true"/>
+                    </RelativeLayout>
+
+                    <LinearLayout
+                        android:id="@+id/layoutfotobelakang"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:orientation="horizontal"
+                        android:layout_below="@id/layouttextbelakang"
+                        android:visibility="gone">
+
+                        <androidx.recyclerview.widget.RecyclerView
+                            android:id="@+id/listfotobelakang"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" />
+                    </LinearLayout>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/bg_shape_kategori"
+                    android:padding="15dp"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:id="@+id/layouttextatas"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Foto Sisi Atas : "
+                                android:fontFamily="@font/neuron_regular"/>
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content">
+
+                                <TextView
+                                    android:id="@+id/textcountatas"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="0"
+                                    android:gravity="center"
+                                    android:textStyle="bold"
+                                    android:fontFamily="@font/neuron_regular"/>
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                        <ImageView
+                            android:id="@+id/tombolfotoatas"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:src="@drawable/vec_add_color"
+                            android:background="@drawable/bg_shape"
+                            android:layout_alignParentRight="true"/>
+                    </RelativeLayout>
+
+                    <LinearLayout
+                        android:id="@+id/layoutfotoatas"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:orientation="horizontal"
+                        android:layout_below="@id/layouttextatas"
+                        android:visibility="gone">
+
+                        <androidx.recyclerview.widget.RecyclerView
+                            android:id="@+id/listfotoatas"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" />
+                    </LinearLayout>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/bg_shape_kategori"
+                    android:padding="15dp"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:id="@+id/layouttextbawah"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Foto Sisi Bawah : "
+                                android:fontFamily="@font/neuron_regular"/>
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content">
+
+                                <TextView
+                                    android:id="@+id/textcountbawah"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="0"
+                                    android:gravity="center"
+                                    android:textStyle="bold"
+                                    android:fontFamily="@font/neuron_regular"/>
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                        <ImageView
+                            android:id="@+id/tombolfotobawah"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:src="@drawable/vec_add_color"
+                            android:background="@drawable/bg_shape"
+                            android:layout_alignParentRight="true"/>
+                    </RelativeLayout>
+
+                    <LinearLayout
+                        android:id="@+id/layoutfotobawah"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:orientation="horizontal"
+                        android:layout_below="@id/layouttextbawah"
+                        android:visibility="gone">
+
+                        <androidx.recyclerview.widget.RecyclerView
+                            android:id="@+id/listfotobawah"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" />
+                    </LinearLayout>
+                </RelativeLayout>
+
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/bg_shape_kategori"
+                    android:padding="15dp"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:id="@+id/layouttextengine"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Foto Sisi Engine : "
+                                android:fontFamily="@font/neuron_regular"/>
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content">
+
+                                <TextView
+                                    android:id="@+id/textcountengine"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="0"
+                                    android:gravity="center"
+                                    android:textStyle="bold"
+                                    android:fontFamily="@font/neuron_regular"/>
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                        <ImageView
+                            android:id="@+id/tombolfotoengine"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:src="@drawable/vec_add_color"
+                            android:background="@drawable/bg_shape"
+                            android:layout_alignParentRight="true"/>
+                    </RelativeLayout>
+
+                    <LinearLayout
+                        android:id="@+id/layoutfotoengine"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:orientation="horizontal"
+                        android:layout_below="@id/layouttextengine"
+                        android:visibility="gone">
+
+                        <androidx.recyclerview.widget.RecyclerView
+                            android:id="@+id/listfotoengine"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" />
+                    </LinearLayout>
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:id="@+id/layoutbottom"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginTop="20dp"
+                    android:gravity="right">
+
+                    <LinearLayout
+                        android:id="@+id/tombollanjut"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="15dp"
+                        android:gravity="center"
+                        android:background="@drawable/bg_button_on">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Lanjutkan"
+                            android:fontFamily="@font/neuron_regular"
+                            android:textStyle="bold"
+                            android:textColor="@color/colorwhite"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/tombolprev"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="15dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/bg_button_off"
+                        android:gravity="center">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Kembali"
+                            android:fontFamily="@font/neuron_regular"
+                            android:textStyle="bold"
+                            android:textColor="@color/colororange"/>
+
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+
+
+    </RelativeLayout>
+
+</FrameLayout>

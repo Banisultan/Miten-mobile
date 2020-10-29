@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.HomeSupervisor">
+
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+        android:id="@+id/swiperefresh"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ScrollView
+            android:id="@+id/scrollview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/colorwhitebg">
+
+                <RelativeLayout
+                    android:id="@+id/layoutjudul"
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:background="@drawable/bg_background">
+
+                    <LinearLayout
+                        android:visibility="visible"
+                        android:id="@+id/tombolsurvei"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="30dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_alignParentRight="true"
+                        android:orientation="vertical"
+                        android:gravity="center">
+
+                        <ImageView
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:src="@drawable/vec_add"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Buat survei"
+                            android:fontFamily="@font/neuron_regular"
+                            android:textColor="@color/colorwhite"
+                            android:textStyle="bold"
+                            android:layout_marginTop="3dp"
+                            android:textSize="12dp"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="20dp">
+
+                        <LinearLayout
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:padding="10dp"
+                            android:background="@drawable/bg_shape">
+
+                            <ImageView
+                                android:id="@+id/imagelogo"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:src="@drawable/vec_logo_2"/>
+                        </LinearLayout>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:text="Convey"
+                            android:textColor="@color/colorwhite"
+                            android:fontFamily="@font/neuron_regular"
+                            android:textStyle="bold"
+                            android:textSize="30dp"
+                            android:gravity="center"
+                            android:layout_marginLeft="10dp"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="30dp"
+                        android:layout_marginRight="30dp"
+                        android:layout_alignParentBottom="true"
+                        android:background="@drawable/bg_shape"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingTop="10dp"
+                            android:paddingLeft="10dp"
+                            android:paddingBottom="5dp">
+
+                            <ImageView
+                                android:visibility="gone"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:src="@drawable/vec_supervisor"
+                                android:layout_marginRight="5dp"/>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:text="Selamat Datang"
+                                android:gravity="center"
+                                android:fontFamily="@font/neuron_regular"/>
+
+                            <TextView
+                                android:id="@+id/textnama"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:text="Rifki vianda"
+                                android:layout_marginLeft="3dp"
+                                android:textStyle="bold"
+                                android:gravity="center"
+                                android:fontFamily="@font/neuron_regular"/>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:paddingLeft="10dp"
+                            android:paddingBottom="5dp">
+
+                        </LinearLayout>
+                    </LinearLayout>
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_below="@id/layoutjudul"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="10dp"
+                    android:padding="15dp"
+                    android:background="@drawable/bg_shape"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/bg_shape_searching"
+                            android:id="@+id/layoutsearch">
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:padding="10dp">
+
+                                <ImageView
+                                    android:visibility="gone"
+                                    android:id="@+id/tombolbatal"
+                                    android:layout_width="30dp"
+                                    android:layout_height="30dp"
+                                    android:background="@drawable/bg_shape"
+                                    android:src="@drawable/vec_batal"
+                                    android:padding="8dp"
+                                    android:layout_marginRight="5dp"/>
+
+                                <EditText
+                                    android:id="@+id/inputsearch"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:hint="Cari nomor container"
+                                    android:fontFamily="@font/neuron_regular"
+                                    android:layout_centerVertical="true"
+                                    android:layout_toRightOf="@id/tombolbatal"
+                                    android:layout_toLeftOf="@id/layoutkanan"
+                                    android:layout_marginRight="10dp"
+                                    android:textColor="@color/colorblack"
+                                    android:inputType=""
+                                    android:background="@null"/>
+
+                                <LinearLayout
+                                    android:id="@+id/layoutkanan"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignParentRight="true">
+
+                                    <ImageView
+                                        android:id="@+id/tombolscanqr"
+                                        android:layout_width="30dp"
+                                        android:layout_height="30dp"
+                                        android:background="@drawable/bg_button"
+                                        android:src="@drawable/vec_qr"
+                                        android:padding="7dp"/>
+
+                                    <ImageView
+                                        android:id="@+id/tombolsearch"
+                                        android:layout_width="30dp"
+                                        android:layout_height="30dp"
+                                        android:background="@drawable/bg_button"
+                                        android:src="@drawable/vec_search"
+                                        android:padding="7dp"/>
+                                </LinearLayout>
+                            </RelativeLayout>
+                        </RelativeLayout>
+
+                        <LinearLayout
+                            android:id="@+id/layoutprogres"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/layoutsearch"
+                            android:background="@drawable/bg_shape_top"
+                            android:paddingLeft="10dp"
+                            android:paddingRight="10dp"
+                            android:paddingTop="5dp"
+                            android:paddingBottom="5dp"
+                            android:gravity="center">
+
+                            <ProgressBar
+                                android:layout_width="20dp"
+                                android:layout_height="20dp"
+                                android:indeterminate="true"
+                                android:layout_marginRight="5dp"
+                                android:background="@drawable/bg_shape"
+                                android:indeterminateTint="@color/colorgreynew"/>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:text="Sedang memuat data"
+                                android:textColor="@color/colorgreynew"
+                                android:gravity="center"
+                                android:fontFamily="@font/neuron_regular"/>
+                        </LinearLayout>
+
+                    </RelativeLayout>
+
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/viewcontainer"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="10dp"/>
+
+                </LinearLayout>
+            </RelativeLayout>
+        </ScrollView>
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+</RelativeLayout>

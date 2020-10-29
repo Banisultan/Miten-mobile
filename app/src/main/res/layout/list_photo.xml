@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:id="@+id/layoututama"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_shape_v7"
+        android:padding="5dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/layoutheader"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_shape_bottom_v2"
+            android:gravity="left"
+            android:paddingLeft="10dp"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp">
+
+            <TextView
+                android:id="@+id/textheader"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="FRONT"
+                android:textSize="@dimen/normal_text"
+                android:textStyle="bold"
+                android:textColor="@color/colorblack_v2"
+                android:fontFamily="@font/neuron_regular"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:paddingBottom="15dp">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/viewphoto"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginTop="10dp"/>
+
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

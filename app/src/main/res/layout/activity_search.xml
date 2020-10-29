@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorwhite"
+    tools:context=".SearchActivity">
+
+    <include
+        android:id="@+id/layouttoolbar"
+        layout="@layout/layout_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/layouttoolbar"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/layoutcari"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_shape_bottom"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingTop="15dp"
+            android:paddingBottom="15dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:background="@drawable/bg_shape_kategori"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/inputsearch"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/neuron_regular"
+                    android:background="@null"
+                    android:inputType="textVisiblePassword|textNoSuggestions"
+                    android:textSize="15dp"
+                    android:layout_toLeftOf="@id/tombolcari"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:hint="Apa yang ingin anda cari saat ini"/>
+
+                <ImageView
+                    android:id="@+id/tombolcari"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_margin="10dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/vec_search"/>
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/layoutbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="10dp"
+            android:layout_below="@id/layoutcari"
+            android:orientation="horizontal">
+
+            <ProgressBar
+                android:id="@+id/progressbar"
+                android:layout_width="20dp"
+                android:layout_height="20dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="13dp"
+                android:text="Sedang memuat data"
+                android:fontFamily="@font/neuron_regular"
+                android:layout_marginLeft="5dp"/>
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/layoutcari"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textempty"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Tidak ada data"
+                android:fontFamily="@font/neuron_regular"
+                android:visibility="visible"
+                android:gravity="center"/>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/view"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+</RelativeLayout>

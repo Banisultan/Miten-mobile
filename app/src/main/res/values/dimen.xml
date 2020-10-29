@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="textsize_normal">5dp</dimen>
+
+
+    <dimen name="normal_judul_input">16dp</dimen>
+    <dimen name="normal_text">13dp</dimen>
+    <dimen name="normal_judul_text">12dp</dimen>
+    <dimen name="normal_button">14dp</dimen>
+    <dimen name="normal_judul">18dp</dimen>
+    <dimen name="normal_judul_big">25dp</dimen>
+    <dimen name="normal_input">14dp</dimen>
+    <dimen name="normal_judul_alert">16dp</dimen>
+</resources>

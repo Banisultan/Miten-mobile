@@ -1,0 +1,54 @@
+<resources>
+    <string name="app_name">MITEN</string>
+    <string name="error_default">Sistem sedang sibuk</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="textdefault">Lorem ipsum dolor sit amet, consectetur adipiscing elit Arcu proin nisi purus tempor nulla sit et mattis. Ultricies nunc, quis sem donec in</string>
+    <string name="textnotif_1">Work safety! Bekerja dengan giat, pulang dengan selamat. Pakailah APDmu dan Bawalah P3K saat kerja!</string>
+
+
+    <!-- INDONESIA LANGUAGE -->
+    <!-- INPUT SURVEY IN -->
+    <string name="ind_toolbar_surveyin">Pengisian Survey IN</string>
+    <string name="ind_container_number">Nomor Container</string>
+    <string name="ind_foto_container">Foto Nomor Container</string>
+    <string name="ind_foto_csc">Foto CSC Plate</string>
+    <string name="ind_owner">Owner</string>
+    <string name="ind_size">Size</string>
+    <string name="ind_tipe">Type</string>
+    <string name="ind_haulier">Haulier</string>
+    <string name="ind_dmf">DMF</string>
+    <string name="ind_payload">Payload</string>
+    <string name="ind_tare">Tare</string>
+    <string name="ind_maxgross">Maxgross</string>
+    <!-- SETTING -->
+    <string name="text_size_normal">15.f</string>
+
+    <!-- SurveyIN Activity -->
+    <string name="surveyin_judulnocontainer">Masukkan Nomor Container</string>
+    <string name="surveyin_nocontainer">Nomor Container</string>
+    <string name="surveyin_buttonnext">Lanjutkan</string>
+    <string name="surveyin_buttonback">Kembali</string>
+
+    <string name="surveyin_juduldatasurvey">Lengkapi Data Container</string>
+    <string name="surveyin_fotocontainer">Foto No.Container</string>
+    <string name="surveyin_fotocsc">Foto CSC Plate</string>
+
+
+    <!-- Alert Message -->
+    <string name="msg_loading">Mohon tunggu</string>
+    <string name="msg_loading_text">Sedang melakukan pengecekan nomor container</string>
+    <string name="msg_loading_login">Sedang melakukan pengecekan akun</string>
+    <string name="msg_warning">Perhatian !</string>
+    <string name="msg_warning_onprogress">Sedang dalam tahap development</string>
+    <string name="msg_oke">OK</string>
+    <string name="msg_batal">Batal</string>
+
+    <string name="val_container_empty">No Container tidak boleh kosong</string>
+    <string name="val_container_format">No Container tidak sesuai</string>
+    <string name="val_username_empty">Username tidak boleh kosong</string>
+    <string name="val_password_empty">Password tidak boleh kosong</string>
+
+</resources>
+

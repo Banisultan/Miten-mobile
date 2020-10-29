@@ -1,0 +1,535 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FinalActivity.AddSurveyinFragment.DataSurveyFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@id/layoutbottom"
+            android:background="@color/colorwhite">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingBottom="30dp"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:paddingTop="10dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/surveyin_juduldatasurvey"
+                    android:gravity="center"
+                    android:fontFamily="@font/neuron_regular"
+                    android:textSize="@dimen/normal_judul_input"
+                    android:textStyle="normal"
+                    android:textColor="@color/colorblack_v2"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:background="@drawable/bg_shape_v7"
+                        android:padding="15dp"
+                        android:gravity="center"
+                        android:layout_marginRight="2dp"
+                        android:layout_weight="1">
+
+                        <TextView
+                            android:id="@+id/textnomorcontainer"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/neuron_regular"
+                            android:textSize="@dimen/normal_text"
+                            android:textColor="@color/colorblack_v2"
+                            android:text="@string/surveyin_fotocontainer"/>
+
+                        <LinearLayout
+                            android:id="@+id/tombolfotocontainer"
+                            android:layout_width="100dp"
+                            android:layout_height="100dp"
+                            android:layout_marginTop="5dp"
+                            android:background="@drawable/bg_image_v2"
+                            android:padding="5dp">
+
+                            <ImageView
+                                android:id="@+id/imagefotocontainer"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:scaleType="centerCrop"
+                                android:adjustViewBounds="true"
+                                android:background="?attr/selectableItemBackground"/>
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:padding="15dp"
+                        android:gravity="center"
+                        android:background="@drawable/bg_shape_v7"
+                        android:layout_marginLeft="2dp"
+                        android:layout_weight="1">
+
+                        <TextView
+                            android:id="@+id/textcscplate"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/neuron_regular"
+                            android:textSize="@dimen/normal_text"
+                            android:textColor="@color/colorblack_v2"
+                            android:text="@string/surveyin_fotocsc"/>
+
+                        <LinearLayout
+                            android:id="@+id/tombolfotocsc"
+                            android:layout_width="100dp"
+                            android:layout_height="100dp"
+                            android:layout_marginTop="5dp"
+                            android:background="@drawable/bg_image_v2"
+                            android:padding="5dp">
+
+                            <ImageView
+                                android:id="@+id/imagefotocsc"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:scaleType="centerCrop"
+                                android:adjustViewBounds="true"
+                                android:background="?attr/selectableItemBackground"/>
+                        </LinearLayout>
+
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/bg_shape_v7"
+                    android:orientation="vertical"
+                    android:paddingLeft="15dp"
+                    android:paddingRight="15dp"
+                    android:paddingTop="15dp"
+                    android:paddingBottom="15dp"
+                    android:layout_marginTop="10dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:fontFamily="@font/neuron_regular"
+                        android:textSize="@dimen/normal_text"
+                        android:textColor="@color/colorblack_v2"
+                        android:text="Owner"/>
+
+                    <Spinner
+                        android:id="@+id/spinowner"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/neuron_regular"
+                        android:textColor="@color/colorblack_v2"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="10dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/bg_shape_v7"
+                        android:orientation="vertical"
+                        android:paddingLeft="15dp"
+                        android:paddingRight="15dp"
+                        android:paddingTop="15dp"
+                        android:paddingBottom="15dp"
+                        android:layout_marginRight="2dp"
+                        android:layout_weight="1">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:fontFamily="@font/neuron_regular"
+                            android:textSize="@dimen/normal_text"
+                            android:textColor="@color/colorblack_v2"
+                            android:text="Size"/>
+
+                        <Spinner
+                            android:id="@+id/spinsize"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/neuron_regular"
+                            android:textColor="@color/colorblack_v2" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/bg_shape_v7"
+                        android:orientation="vertical"
+                        android:paddingLeft="15dp"
+                        android:paddingRight="15dp"
+                        android:paddingTop="15dp"
+                        android:paddingBottom="15dp"
+                        android:layout_marginLeft="2dp"
+                        android:layout_weight="1">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:fontFamily="@font/neuron_regular"
+                            android:textSize="@dimen/normal_text"
+                            android:textColor="@color/colorblack_v2"
+                            android:text="Type"/>
+
+                        <Spinner
+                            android:id="@+id/spintipe"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/neuron_regular"
+                            android:textColor="@color/colorblack_v2"/>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/bg_shape_v7"
+                    android:orientation="vertical"
+                    android:paddingLeft="15dp"
+                    android:paddingRight="15dp"
+                    android:paddingTop="15dp"
+                    android:paddingBottom="15dp"
+                    android:layout_marginTop="10dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:fontFamily="@font/neuron_regular"
+                        android:textSize="@dimen/normal_text"
+                        android:textColor="@color/colorblack_v2"
+                        android:text="Haulier"/>
+
+                    <EditText
+                        android:id="@+id/inputhaulier"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@null"
+                        android:fontFamily="@font/neuron_regular"
+                        android:hint="contoh : UU 0000 UU"
+                        android:inputType="textVisiblePassword|textNoSuggestions|textCapCharacters"
+                        android:textAllCaps="true"
+                        android:textColor="@color/colorblack_v2"
+                        android:textCursorDrawable="@null"
+                        android:maxLines="1"
+                        android:maxLength="12"
+                        android:textStyle="bold"
+                        android:textSize="@dimen/normal_input" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/bg_shape_v7"
+                    android:orientation="vertical"
+                    android:paddingLeft="15dp"
+                    android:paddingRight="15dp"
+                    android:paddingTop="15dp"
+                    android:paddingBottom="15dp"
+                    android:layout_marginTop="10dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:fontFamily="@font/neuron_regular"
+                        android:textSize="@dimen/normal_text"
+                        android:textColor="@color/colorblack_v2"
+                        android:text="DMF"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <Spinner
+                            android:id="@+id/spinbulan"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/neuron_regular"
+                            android:textColor="@color/colorblack_v2"
+                            android:layout_weight="1"/>
+
+                        <Spinner
+                            android:id="@+id/spintahun"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/neuron_regular"
+                            android:textColor="@color/colorblack_v2"
+                            android:layout_marginLeft="10dp"
+                            android:layout_weight="1"/>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="2"/>
+
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="10dp">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/bg_shape_v7"
+                        android:orientation="vertical"
+                        android:paddingLeft="15dp"
+                        android:paddingRight="15dp"
+                        android:paddingTop="15dp"
+                        android:paddingBottom="15dp"
+                        android:layout_marginRight="2dp"
+                        android:layout_weight="1">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:fontFamily="@font/neuron_regular"
+                            android:textSize="@dimen/normal_text"
+                            android:textColor="@color/colorblack_v2"
+                            android:text="Tare"/>
+
+                        <EditText
+                            android:id="@+id/inputtare"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@null"
+                            android:fontFamily="@font/neuron_regular"
+                            android:hint="0"
+                            android:inputType="number"
+                            android:textAllCaps="true"
+                            android:textColor="@color/colorblack_v2"
+                            android:maxLines="1"
+                            android:maxLength="10"
+                            android:textStyle="bold"
+                            android:textSize="@dimen/normal_input" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/bg_shape_v7"
+                        android:orientation="vertical"
+                        android:paddingLeft="15dp"
+                        android:paddingRight="15dp"
+                        android:paddingTop="15dp"
+                        android:paddingBottom="15dp"
+                        android:layout_marginLeft="2dp"
+                        android:layout_marginRight="2dp"
+                        android:layout_weight="1">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:fontFamily="@font/neuron_regular"
+                            android:textSize="@dimen/normal_text"
+                            android:textColor="@color/colorblack_v2"
+                            android:text="Payload"/>
+
+                        <EditText
+                            android:id="@+id/inputpayload"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@null"
+                            android:fontFamily="@font/neuron_regular"
+                            android:hint="0"
+                            android:inputType="number"
+                            android:textAllCaps="true"
+                            android:textColor="@color/colorblack_v2"
+                            android:textCursorDrawable="@null"
+                            android:maxLines="1"
+                            android:maxLength="10"
+                            android:textStyle="bold"
+                            android:textSize="@dimen/normal_input" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/bg_shape_v7"
+                        android:orientation="vertical"
+                        android:paddingLeft="15dp"
+                        android:paddingRight="15dp"
+                        android:paddingTop="15dp"
+                        android:paddingBottom="15dp"
+                        android:layout_marginLeft="2dp"
+                        android:layout_weight="1">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:fontFamily="@font/neuron_regular"
+                            android:textSize="@dimen/normal_text"
+                            android:textColor="@color/colorblack_v2"
+                            android:text="Maxgross"/>
+
+                        <EditText
+                            android:id="@+id/inputmaxgross"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@null"
+                            android:fontFamily="@font/neuron_regular"
+                            android:hint="0"
+                            android:inputType="number"
+                            android:textAllCaps="true"
+                            android:textColor="@color/colorblack_v2"
+                            android:textCursorDrawable="@null"
+                            android:maxLines="1"
+                            android:maxLength="10"
+                            android:textStyle="bold"
+                            android:textSize="@dimen/normal_input" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="10dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/bg_shape_v7"
+                        android:orientation="vertical"
+                        android:paddingLeft="15dp"
+                        android:paddingRight="15dp"
+                        android:paddingTop="15dp"
+                        android:paddingBottom="15dp"
+                        android:layout_weight="1">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:fontFamily="@font/neuron_regular"
+                            android:textSize="@dimen/normal_text"
+                            android:textColor="@color/colorblack_v2"
+                            android:text="Grade"/>
+
+                        <Spinner
+                            android:id="@+id/spingrade"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/neuron_regular"
+                            android:textColor="@color/colorblack_v2" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:visibility="invisible"
+                        android:layout_weight="1">
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/bg_shape_v7"
+                    android:orientation="vertical"
+                    android:paddingLeft="15dp"
+                    android:paddingRight="15dp"
+                    android:paddingTop="15dp"
+                    android:paddingBottom="15dp"
+                    android:layout_marginTop="10dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:fontFamily="@font/neuron_regular"
+                        android:textSize="@dimen/normal_text"
+                        android:textColor="@color/colorblack_v2"
+                        android:text="Wash"/>
+
+                    <Spinner
+                        android:id="@+id/spinwash"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/neuron_regular"
+                        android:textColor="@color/colorblack_v2"/>
+                </LinearLayout>
+            </LinearLayout>
+        </androidx.core.widget.NestedScrollView>
+
+        <LinearLayout
+            android:id="@+id/layoutbottom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding ="10dp"
+            android:background="@drawable/bg_layout_bottom"
+            android:layout_alignParentBottom="true">
+
+            <LinearLayout
+                android:id="@+id/tombolkembali"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/bg_button_off">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="?attr/selectableItemBackground"
+                    android:text="@string/surveyin_buttonback"
+                    android:fontFamily="@font/neuron_regular"
+                    android:textStyle="bold"
+                    android:padding="10dp"
+                    android:gravity="center"
+                    android:textSize="@dimen/normal_button"
+                    android:textColor="@color/colororange"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/tombollanjut"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/bg_button_on">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="?attr/selectableItemBackground"
+                    android:text="@string/surveyin_buttonnext"
+                    android:fontFamily="@font/neuron_regular"
+                    android:textStyle="bold"
+                    android:padding="10dp"
+                    android:gravity="center"
+                    android:textSize="@dimen/normal_button"
+                    android:textColor="@color/colorwhite"/>
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+
+</FrameLayout>

@@ -1,0 +1,749 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.ViewSurveyActivity">
+
+    <include
+        android:id="@+id/layouttoolbar"
+        layout="@layout/layout_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorwhite"
+        android:layout_below="@id/layouttoolbar">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:paddingTop="0dp"
+            android:paddingBottom="40dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginLeft="20dp"
+                android:paddingTop="10dp"
+                android:layout_marginRight="20dp"
+                android:paddingBottom="10dp"
+                android:gravity="center|left"
+                android:background="@drawable/bg_shape_list_view">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Status"
+                    android:layout_weight="2"
+                    android:fontFamily="@font/neuron_regular"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:layout_weight="1">
+
+                    <LinearLayout
+                        android:id="@+id/layoutstatus"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:id="@+id/textstatus"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text=""
+                            android:paddingTop="5dp"
+                            android:paddingBottom="5dp"
+                            android:paddingLeft="30dp"
+                            android:paddingRight="30dp"
+                            android:textSize="15dp"
+                            android:textStyle="bold"
+                            android:gravity="center"
+                            android:textColor="@color/colorwhite"
+                            android:fontFamily="@font/neuron_regular"/>
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="3dp"
+                android:layout_marginLeft="20dp"
+                android:paddingTop="10dp"
+                android:layout_marginRight="20dp"
+                android:paddingBottom="10dp"
+                android:gravity="center|left"
+                android:background="@drawable/bg_shape_list_view">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Nomor Container"
+                    android:layout_weight="2"
+                    android:fontFamily="@font/neuron_regular"/>
+
+                <TextView
+                    android:id="@+id/textnomorcontainer"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:layout_weight="1"
+                    android:gravity="right"
+                    android:textColor="@color/colorblack"
+                    android:fontFamily="@font/neuron_regular"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="3dp"
+                android:layout_marginLeft="20dp"
+                android:paddingTop="10dp"
+                android:layout_marginRight="20dp"
+                android:paddingBottom="10dp"
+                android:gravity="center|left"
+                android:background="@drawable/bg_shape_list_view">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Owner"
+                    android:layout_weight="2"
+                    android:fontFamily="@font/neuron_regular"/>
+
+                <TextView
+                    android:id="@+id/textowner"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:layout_weight="1"
+                    android:gravity="right"
+                    android:fontFamily="@font/neuron_regular"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:orientation="horizontal"
+                android:layout_marginLeft="20dp"
+                android:paddingTop="10dp"
+                android:layout_marginRight="20dp"
+                android:paddingBottom="10dp"
+                android:gravity="center|left"
+                android:background="@drawable/bg_shape_list_view">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Size"
+                    android:layout_weight="2"
+                    android:fontFamily="@font/neuron_regular"/>
+
+                <TextView
+                    android:id="@+id/textsize"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:layout_weight="1"
+                    android:gravity="right"
+                    android:fontFamily="@font/neuron_regular"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="3dp"
+                android:layout_marginLeft="20dp"
+                android:paddingTop="10dp"
+                android:layout_marginRight="20dp"
+                android:paddingBottom="10dp"
+                android:gravity="center|left"
+                android:background="@drawable/bg_shape_list_view">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Tipe"
+                    android:layout_weight="2"
+                    android:fontFamily="@font/neuron_regular"/>
+
+                <TextView
+                    android:id="@+id/texttipe"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:layout_weight="1"
+                    android:gravity="right"
+                    android:fontFamily="@font/neuron_regular"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="3dp"
+                android:layout_marginLeft="20dp"
+                android:paddingTop="10dp"
+                android:layout_marginRight="20dp"
+                android:paddingBottom="10dp"
+                android:gravity="center|left"
+                android:background="@drawable/bg_shape_list_view">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Haulier"
+                    android:layout_weight="2"
+                    android:fontFamily="@font/neuron_regular"/>
+
+                <TextView
+                    android:id="@+id/texthaulier"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:layout_weight="1"
+                    android:gravity="right"
+                    android:fontFamily="@font/neuron_regular"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:orientation="horizontal"
+                android:layout_marginLeft="20dp"
+                android:paddingTop="10dp"
+                android:layout_marginRight="20dp"
+                android:paddingBottom="10dp"
+                android:gravity="center|left"
+                android:background="@drawable/bg_shape_list_view">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="DMF"
+                    android:layout_weight="2"
+                    android:fontFamily="@font/neuron_regular"/>
+
+                <TextView
+                    android:id="@+id/textdmf"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:layout_weight="1"
+                    android:gravity="right"
+                    android:fontFamily="@font/neuron_regular"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="3dp"
+                android:layout_marginLeft="20dp"
+                android:paddingTop="10dp"
+                android:layout_marginRight="20dp"
+                android:paddingBottom="10dp"
+                android:gravity="center|left"
+                android:background="@drawable/bg_shape_list_view">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Payload"
+                    android:layout_weight="2"
+                    android:fontFamily="@font/neuron_regular"/>
+
+                <TextView
+                    android:id="@+id/textpayload"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:layout_weight="1"
+                    android:gravity="right"
+                    android:fontFamily="@font/neuron_regular"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="3dp"
+                android:layout_marginLeft="20dp"
+                android:paddingTop="10dp"
+                android:layout_marginRight="20dp"
+                android:paddingBottom="10dp"
+                android:gravity="center|left"
+                android:background="@drawable/bg_shape_list_view">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Tare"
+                    android:layout_weight="2"
+                    android:fontFamily="@font/neuron_regular"/>
+
+                <TextView
+                    android:id="@+id/texttare"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:layout_weight="1"
+                    android:gravity="right"
+                    android:fontFamily="@font/neuron_regular"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="3dp"
+                android:layout_marginLeft="20dp"
+                android:paddingTop="10dp"
+                android:layout_marginRight="20dp"
+                android:paddingBottom="10dp"
+                android:gravity="center|left"
+                android:background="@drawable/bg_shape_list_view">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Maxgross"
+                    android:layout_weight="2"
+                    android:fontFamily="@font/neuron_regular"/>
+
+                <TextView
+                    android:id="@+id/textmaxgross"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:layout_weight="1"
+                    android:gravity="right"
+                    android:fontFamily="@font/neuron_regular"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginLeft="20dp"
+                android:paddingTop="10dp"
+                android:layout_marginRight="20dp"
+                android:paddingBottom="10dp"
+                android:gravity="center|left"
+                android:background="@drawable/bg_shape_list_view">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Comp"
+                    android:layout_weight="2"
+                    android:fontFamily="@font/neuron_regular"/>
+
+                <TextView
+                    android:id="@+id/textcomp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:layout_weight="1"
+                    android:gravity="right"
+                    android:fontFamily="@font/neuron_regular"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="3dp"
+                android:layout_marginLeft="20dp"
+                android:paddingTop="10dp"
+                android:layout_marginRight="20dp"
+                android:paddingBottom="10dp"
+                android:gravity="center|left"
+                android:background="@drawable/bg_shape_list_view">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Location"
+                    android:layout_weight="2"
+                    android:fontFamily="@font/neuron_regular"/>
+
+                <TextView
+                    android:id="@+id/textlocation"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:layout_weight="1"
+                    android:gravity="right"
+                    android:fontFamily="@font/neuron_regular"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="3dp"
+                android:layout_marginLeft="20dp"
+                android:paddingTop="10dp"
+                android:layout_marginRight="20dp"
+                android:paddingBottom="10dp"
+                android:gravity="center|left"
+                android:background="@drawable/bg_shape_list_view">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Dimensi"
+                    android:layout_weight="2"
+                    android:fontFamily="@font/neuron_regular"/>
+
+                <TextView
+                    android:id="@+id/textdimensi"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:layout_weight="1"
+                    android:gravity="right"
+                    android:fontFamily="@font/neuron_regular"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="3dp"
+                android:layout_marginLeft="20dp"
+                android:paddingTop="10dp"
+                android:layout_marginRight="20dp"
+                android:paddingBottom="10dp"
+                android:gravity="center|left"
+                android:background="@drawable/bg_shape_list_view">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Quantity"
+                    android:layout_weight="2"
+                    android:fontFamily="@font/neuron_regular"/>
+
+                <TextView
+                    android:id="@+id/textquantity"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:layout_weight="1"
+                    android:gravity="right"
+                    android:fontFamily="@font/neuron_regular"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="3dp"
+                android:layout_marginLeft="20dp"
+                android:paddingTop="10dp"
+                android:layout_marginRight="20dp"
+                android:paddingBottom="10dp"
+                android:gravity="center|left"
+                android:background="@drawable/bg_shape_list_view">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Tpc"
+                    android:layout_weight="2"
+                    android:fontFamily="@font/neuron_regular"/>
+
+                <TextView
+                    android:id="@+id/texttpc"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:layout_weight="1"
+                    android:gravity="right"
+                    android:fontFamily="@font/neuron_regular"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="3dp"
+                android:layout_marginLeft="20dp"
+                android:paddingTop="10dp"
+                android:layout_marginRight="20dp"
+                android:paddingBottom="10dp"
+                android:gravity="center"
+                android:background="@drawable/bg_shape_list_view">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Foto Nomor Container"
+                    android:fontFamily="@font/neuron_regular"/>
+
+                <ImageView
+                    android:id="@+id/imagecontainer"
+                    android:layout_width="150dp"
+                    android:layout_height="100dp"
+                    android:layout_marginTop="10dp"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="3dp"
+                android:layout_marginLeft="20dp"
+                android:paddingTop="10dp"
+                android:layout_marginRight="20dp"
+                android:paddingBottom="10dp"
+                android:gravity="center|left"
+                android:background="@drawable/bg_shape_list_view">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Foto Bagian Depan"
+                    android:fontFamily="@font/neuron_regular"/>
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/listfotodepan"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="3dp"
+                android:layout_marginLeft="20dp"
+                android:paddingTop="10dp"
+                android:layout_marginRight="20dp"
+                android:paddingBottom="10dp"
+                android:gravity="center|left"
+                android:background="@drawable/bg_shape_list_view">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Foto Bagian Kiri"
+                    android:fontFamily="@font/neuron_regular"/>
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/listfotokiri"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="3dp"
+                android:layout_marginLeft="20dp"
+                android:paddingTop="10dp"
+                android:layout_marginRight="20dp"
+                android:paddingBottom="10dp"
+                android:gravity="center|left"
+                android:background="@drawable/bg_shape_list_view">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Foto Bagian Belakang"
+                    android:fontFamily="@font/neuron_regular"/>
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/listfotobelakang"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="3dp"
+                android:layout_marginLeft="20dp"
+                android:paddingTop="10dp"
+                android:layout_marginRight="20dp"
+                android:paddingBottom="10dp"
+                android:gravity="center|left"
+                android:background="@drawable/bg_shape_list_view">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Foto Bagian Atas"
+                    android:fontFamily="@font/neuron_regular"/>
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/listfotoatas"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="3dp"
+                android:layout_marginLeft="20dp"
+                android:paddingTop="10dp"
+                android:layout_marginRight="20dp"
+                android:paddingBottom="10dp"
+                android:gravity="center|left"
+                android:background="@drawable/bg_shape_list_view">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Foto Bagian Bawah"
+                    android:fontFamily="@font/neuron_regular"/>
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/listfotobawah"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="3dp"
+                android:layout_marginLeft="20dp"
+                android:paddingTop="10dp"
+                android:layout_marginRight="20dp"
+                android:paddingBottom="10dp"
+                android:gravity="center|left"
+                android:background="@drawable/bg_shape_list_view">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Foto Bagian Engine"
+                    android:fontFamily="@font/neuron_regular"/>
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/listfotoengine"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="3dp"
+                android:layout_marginLeft="20dp"
+                android:paddingTop="10dp"
+                android:layout_marginRight="20dp"
+                android:paddingBottom="10dp"
+                android:gravity="center|left"
+                android:background="@drawable/bg_shape_list_view">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Foto Bagian Kanan"
+                    android:fontFamily="@font/neuron_regular"/>
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/listfotokanan"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layoutbutton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="10dp">
+
+                <TextView
+                    android:id="@+id/tombolsimpan"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/bg_button_approve"
+                    android:text="Approve Survey"
+                    android:gravity="center"
+                    android:textColor="@color/colorwhite"
+                    android:fontFamily="@font/neuron_regular"
+                    android:textStyle="bold"
+                    android:textSize="15dp"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layoutbuttonedit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="10dp">
+
+                <TextView
+                    android:id="@+id/tomboledit"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/bg_button_on"
+                    android:text="Edit Survey"
+                    android:gravity="center"
+                    android:textColor="@color/colorwhite"
+                    android:fontFamily="@font/neuron_regular"
+                    android:textStyle="bold"
+                    android:textSize="15dp"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp"/>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <include
+        android:visibility="gone"
+        android:id="@+id/layoutimage"
+        layout="@layout/layout_image"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+    <include
+        android:visibility="gone"
+        android:id="@+id/layoutmessage"
+        layout="@layout/layout_message_new"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+    <include
+        android:visibility="gone"
+        android:id="@+id/layoutmessageoption"
+        layout="@layout/layout_message_option"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+</RelativeLayout>
